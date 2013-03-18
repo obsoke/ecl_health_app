@@ -3,17 +3,11 @@
     <string name="app_name">This App Will Make You Live Forever</string>
 
     <!-- WelcomeLayout -->
-    <string name="app_name">This App Will Make You Live Forever</string>
-    <string name="app_name">This App Will Make You Live Forever</string>
-    <string name="app_name">This App Will Make You Live Forever</string>
+    <string name="welcome">Welcome to</string>
+    <string name="instructions">It seems this is your first time using the app. Hit the button below to begin.</string>
+    <string name="sign_up_button">Sign Up</string>
 
     <!-- SignUpLayout -->
-    <string name="app_name">This App Will Make You Live Forever</string>
-    <string name="app_name">This App Will Make You Live Forever</string>
-    <string name="app_name">This App Will Make You Live Forever</string>
 
     <!-- DashboardLayout -->
-    <string name="app_name">This App Will Make You Live Forever</string>
-    <string name="app_name">This App Will Make You Live Forever</string>
-    <string name="app_name">This App Will Make You Live Forever</string>
 </resources>

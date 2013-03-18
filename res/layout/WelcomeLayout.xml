@@ -5,9 +5,24 @@
               android:layout_height="fill_parent"
         >
     <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World, WelcomeActivity"
-            />
+            android:text="@string/welcome"
+            android:id="@+id/TVwelcomeText" android:layout_gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/TVappName" android:layout_gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:id="@+id/TVinstructions" android:layout_gravity="center"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_button"
+            android:id="@+id/BTNsignUp" android:layout_gravity="center"/>
 </LinearLayout>
 
