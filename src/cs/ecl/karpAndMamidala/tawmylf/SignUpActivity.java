@@ -13,5 +13,6 @@ import android.os.Bundle;
 public class SignUpActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.SignUpLayout);
     }
 }
