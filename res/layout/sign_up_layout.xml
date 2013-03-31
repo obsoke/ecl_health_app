@@ -5,4 +5,39 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_signup_name" android:layout_gravity="center" android:minWidth="250dp"
+            android:hint="@string/ev_signup_name"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_signup_streetaddress" android:minWidth="250dp" android:layout_gravity="center"
+            android:hint="@string/ev_signup_address" android:gravity="clip_vertical"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_signup_phone" android:layout_gravity="center" android:minWidth="250dp"
+            android:hint="@string/ev_signup_phone"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_signup_emerg_name" android:layout_gravity="center" android:minWidth="250dp"
+            android:hint="@string/ev_signup_emerg_name"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_signup_emerg_address" android:layout_gravity="center"
+            android:hint="@string/ev_signup_emerg_address"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_signup_emerg_phone" android:layout_gravity="center"
+            android:hint="@string/ev_signup_emerg_phone"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_signup"
+            android:id="@+id/signup_btn" android:layout_gravity="center" android:onClick="signUp"/>
 </LinearLayout>

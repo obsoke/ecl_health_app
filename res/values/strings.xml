@@ -8,6 +8,15 @@
     <string name="sign_up_button">Sign Up</string>
 
     <!-- sign_up_layout -->
+    <string name="ev_signup_name">Your name</string>
+    <string name="ev_signup_address">Your address</string>
+    <string name="ev_signup_phone">Your phone number</string>
+
+    <string name="ev_signup_emerg_name">Emergency contact's name</string>
+    <string name="ev_signup_emerg_address">Emergency contact's address</string>
+    <string name="ev_signup_emerg_phone">Emergency contact's number</string>
+
+    <string name="btn_signup">Sign up!</string>
 
     <!-- dashboard_layout -->
 </resources>
