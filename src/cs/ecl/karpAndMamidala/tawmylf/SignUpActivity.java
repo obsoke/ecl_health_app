@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -21,7 +22,8 @@ public class SignUpActivity extends Activity {
     }
 
     public void signUp(View v) {
-        //TODO: get value/validate form
+        // get value/validate form
+        TextView tv_error = (TextView) findViewById(R.id.tv_error);
         final EditText et_name = (EditText) findViewById(R.id.et_signup_name);
         final EditText et_address = (EditText) findViewById(R.id.et_signup_address);
         final EditText et_phone = (EditText) findViewById(R.id.et_signup_phone);
@@ -37,14 +39,17 @@ public class SignUpActivity extends Activity {
         final String emerg_address = et_emerg_address.getText().toString();
         final String emerg_phone = et_emerg_phone.getText().toString();
         final int gender = et_gender.getCheckedRadioButtonId();
+        boolean isFemale = false;
+
         if (gender == R.id.rb_male) {
-           //TODO: set gender to male
+            isFemale = false;
         }
         else if (gender == R.id.rb_female){
-            //TODO: set gender to female
+            isFemale = true;
         }
         else {
-            //TODO: cue error
+            tv_error.setText(R.string.error_gender);
+            return;
         }
 
         if(name.isEmpty() ||
@@ -53,14 +58,11 @@ public class SignUpActivity extends Activity {
                 emerg_name.isEmpty() ||
                 emerg_address.isEmpty() ||
                 emerg_phone.isEmpty()) {
-            Toast t = Toast.makeText(getBaseContext(), "owned", Toast.LENGTH_SHORT);
-            t.show();
+            tv_error.setText(R.string.error_entire_form);
             return;
         }
-        Toast t = Toast.makeText(getBaseContext(), "good job", Toast.LENGTH_SHORT);
-        t.show();
 
         //TODO: if form is valid, create new user
-        //TODO: if not, give error message to user
+        tv_error.setText(R.string.success_creating_user);
     }
 }

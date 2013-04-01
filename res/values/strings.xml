@@ -21,5 +21,9 @@
     <string name="rb_male">Male</string>
     <string name="rb_female">Female</string>
 
+    <string name="success_creating_user">Creating user...</string>
+    <string name="error_gender">Please select a gender.</string>
+    <string name="error_entire_form">Please fill out the entire sign-up form.</string>
+
     <!-- dashboard_layout -->
 </resources>
