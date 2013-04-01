@@ -47,6 +47,19 @@ public class SignUpActivity extends Activity {
             //TODO: cue error
         }
 
+        if(name.isEmpty() ||
+                address.isEmpty() ||
+                phone.isEmpty() ||
+                emerg_name.isEmpty() ||
+                emerg_address.isEmpty() ||
+                emerg_phone.isEmpty()) {
+            Toast t = Toast.makeText(getBaseContext(), "owned", Toast.LENGTH_SHORT);
+            t.show();
+            return;
+        }
+        Toast t = Toast.makeText(getBaseContext(), "good job", Toast.LENGTH_SHORT);
+        t.show();
+
         //TODO: if form is valid, create new user
         //TODO: if not, give error message to user
     }
