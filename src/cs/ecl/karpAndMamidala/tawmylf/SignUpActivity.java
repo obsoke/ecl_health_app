@@ -16,9 +16,12 @@ import android.widget.Toast;
  * To change this template use File | Settings | File Templates.
  */
 public class SignUpActivity extends Activity {
+    private UserDataSource dataSource;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up_layout);
+
+        dataSource = new UserDataSource(this);
     }
 
     public void signUp(View v) {
@@ -62,7 +65,12 @@ public class SignUpActivity extends Activity {
             return;
         }
 
-        //TODO: if form is valid, create new user
         tv_error.setText(R.string.success_creating_user);
+
+        User user = null;
+        dataSource.open();
+        user = dataSource.createUser(name, gender, address, phone, emerg_name, emerg_address, emerg_phone);
+        dataSource.close();
+        //TODO: send user to dashboard
     }
 }

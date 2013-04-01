@@ -23,10 +23,13 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SQLiteHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/UserDataSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ecl_health_app.iws" />
@@ -34,11 +37,12 @@
     <file path="/Dummy.txt" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364781348210" ignored="false" />
     <file path="/strings.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364776146087" ignored="false" />
     <file path="/DashboardActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1363573658445" ignored="false" />
-    <file path="/SignUpActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364780591393" ignored="false" />
+    <file path="/SignUpActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364786199427" ignored="false" />
     <file path="/a.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364762588802" ignored="false" />
     <file path="/WelcomeActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364775364074" ignored="false" />
     <file path="/SQLiteHelper.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364783387887" ignored="false" />
     <file path="/User.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364783715727" ignored="false" />
+    <file path="/UserDataSource.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364786097148" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SignUpActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
+            <state line="51" column="8" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.7512953">
               <folding />
             </state>
           </provider>
@@ -118,7 +122,7 @@
       <file leaf-file-name="SQLiteHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SQLiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="18" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
+            <state line="28" column="18" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,11 +130,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.98245615">
+            <state line="49" column="4" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDataSource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/UserDataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="55" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,9 +197,10 @@
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WelcomeActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/sign_up_layout.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SQLiteHelper.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/UserDataSource.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java" />
       </list>
     </option>
   </component>
@@ -493,12 +509,12 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33069083" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19316968" sideWeight="0.6704417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19316968" sideWeight="0.6874292" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31257078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -568,13 +584,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="6" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
@@ -662,25 +671,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
+        <state line="49" column="4" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SQLiteHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="18" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
+        <state line="28" column="18" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java">
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/UserDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.98245615">
+        <state line="50" column="55" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="8" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.7512953">
           <folding />
         </state>
       </provider>
