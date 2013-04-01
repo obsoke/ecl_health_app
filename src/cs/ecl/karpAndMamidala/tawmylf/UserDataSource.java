@@ -37,6 +37,13 @@ public class UserDataSource {
         dbHelper.close();
     }
 
+    public boolean doesUserExist() {
+        Cursor cursor = db.query(SQLiteHelper.TABLE_USER, columns,
+                null, null, null, null, null);
+        int count = cursor.getCount();
+        return count > 0 ? true : false;
+    }
+
     public User createUser(String name, int gender, String address, String phone,
                            String emerg_name, String emerg_address, String emerg_phone) {
         ContentValues values = new ContentValues();
