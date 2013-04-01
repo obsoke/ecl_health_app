@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class WelcomeActivity extends Activity {
     @Override
@@ -13,6 +14,7 @@ public class WelcomeActivity extends Activity {
     }
 
     public void toSignUp(View v) {
-        //TODO: send user to sign up activity
+        Intent i = new Intent(this, SignUpActivity.class);
+        startActivity(i);
     }
 }
