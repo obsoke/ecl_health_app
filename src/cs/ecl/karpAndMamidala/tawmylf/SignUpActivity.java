@@ -41,14 +41,14 @@ public class SignUpActivity extends Activity {
         final String emerg_name = et_emerg_name.getText().toString();
         final String emerg_address = et_emerg_address.getText().toString();
         final String emerg_phone = et_emerg_phone.getText().toString();
-        final int gender = et_gender.getCheckedRadioButtonId();
-        boolean isFemale = false;
+        final int gen = et_gender.getCheckedRadioButtonId();
+        int gender;
 
-        if (gender == R.id.rb_male) {
-            isFemale = false;
+        if (gen == R.id.rb_male) {
+            gender = 0;
         }
-        else if (gender == R.id.rb_female){
-            isFemale = true;
+        else if (gen == R.id.rb_female){
+            gender = 1;
         }
         else {
             tv_error.setText(R.string.error_gender);
