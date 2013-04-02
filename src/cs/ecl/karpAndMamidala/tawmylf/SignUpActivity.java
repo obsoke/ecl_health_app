@@ -1,6 +1,7 @@
 package cs.ecl.karpAndMamidala.tawmylf;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -71,6 +72,9 @@ public class SignUpActivity extends Activity {
         dataSource.open();
         user = dataSource.createUser(name, gender, address, phone, emerg_name, emerg_address, emerg_phone);
         dataSource.close();
-        //TODO: send user to dashboard
+
+        Intent i = new Intent(this, DashboardActivity.class);
+        //TODO: pass User object to DashboardActivity
+        startActivity(i);
     }
 }
