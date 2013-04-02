@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf;
+package cs.ecl.karpAndMamidala.tawmylf.Models;
 
 /**
  * Created with IntelliJ IDEA.

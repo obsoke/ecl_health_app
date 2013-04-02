@@ -1,7 +1,8 @@
-package cs.ecl.karpAndMamidala.tawmylf;
+package cs.ecl.karpAndMamidala.tawmylf.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import cs.ecl.karpAndMamidala.tawmylf.R;
 
 /**
  * Created with IntelliJ IDEA.

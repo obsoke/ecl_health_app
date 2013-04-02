@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf;
+package cs.ecl.karpAndMamidala.tawmylf.Database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

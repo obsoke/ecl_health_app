@@ -1,10 +1,12 @@
-package cs.ecl.karpAndMamidala.tawmylf;
+package cs.ecl.karpAndMamidala.tawmylf.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+import cs.ecl.karpAndMamidala.tawmylf.R;
+import cs.ecl.karpAndMamidala.tawmylf.Models.User;
+import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
 
 public class WelcomeActivity extends Activity {
     private UserDataSource dataSource;

@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf;
+package cs.ecl.karpAndMamidala.tawmylf.Models;
 
 import java.util.Date;
 
