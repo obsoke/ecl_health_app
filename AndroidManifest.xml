@@ -16,6 +16,16 @@
         <activity android:name=".Activities.SignUpActivity"
                   android:label="SignUpActivity"
                   android:noHistory="true"></activity>
-        <activity android:name=".Activities.DashboardActivity" android:label="DashboardActivity"/>
+        <activity android:name=".Activities.DashboardActivity"
+                  android:label="DashboardActivity"/>
+        <activity android:name=".Activities.RecordBloodPressureActivity"
+                  android:label="RecordBloodPressureActivity"
+                  android:noHistory="true"></activity>
+        <activity android:name=".Activities.RecordWeightActivity"
+                  android:label="RecordWeightActivity"
+                  android:noHistory="true"></activity>
+        <activity android:name=".Activities.RecordExerciseActivity"
+                  android:label="RecordExerciseActivity"
+                  android:noHistory="true"></activity>
     </application>
 </manifest>

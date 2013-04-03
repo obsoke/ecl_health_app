@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-</LinearLayout>
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard_msg" />
+
+<Button
+        android:id="@+id/btn_record_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_record_bp"
+        android:layout_below="@+id/btn_record_bp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/record_weight" android:onClick="onClickRecordWeight"/>
+
+<Button
+        android:id="@+id/btn_record_exer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_record_weight"
+        android:layout_below="@+id/btn_record_weight"
+        android:layout_centerHorizontal="true"
+        android:text="@string/record_exercise" android:onClick="onClickRecordExercise"/>
+
+<Button
+        android:id="@+id/btn_stats_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_record_weight"
+        android:layout_below="@+id/btn_stats_bp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view_weight" />
+
+<Button
+        android:id="@+id/btn_stats_exer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_stats_weight"
+        android:layout_below="@+id/btn_stats_weight"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view_exercise" />
+
+<Button
+        android:id="@+id/btn_stats_bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_record_exer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/view_bp" />
+
+<Button
+        android:id="@+id/btn_record_bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/record_bp" android:onClick="onClickRecordBP"/>
+
+</RelativeLayout>

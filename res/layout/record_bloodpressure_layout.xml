@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <EditText
+            android:id="@+id/systolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bp_msg"
+            android:layout_below="@+id/bp_msg"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="@string/systolic" />
+
+
+
+    <TextView
+            android:id="@+id/bp_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/bp_msg" />
+
+    <EditText
+            android:id="@+id/diastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/systolic"
+            android:layout_below="@+id/systolic"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/diastolic" >
+
+    </EditText>
+
+    <EditText
+            android:id="@+id/pulse_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/diastolic"
+            android:layout_below="@+id/diastolic"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="@string/pulse_rate" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/pulse_rate"
+            android:layout_below="@+id/pulse_rate"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/submit_bp" />
+</RelativeLayout>

@@ -28,40 +28,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/BloodPressureDataSource.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/BloodPressureDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/BloodPressureItem.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/BloodPressureItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/DashboardActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/DashboardActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/ExerciseDataSource.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/ExerciseDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/ExerciseItem.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/ExerciseItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SQLiteHelper.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/SQLiteHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/SignUpActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/UserDataSource.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/UserDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WeightDataSource.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/WeightDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WeightItem.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/WeightItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WelcomeActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/WelcomeActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordBloodPressureActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordExerciseActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordWeightActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/record_bloodpressure_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/record_exercise_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/record_weight_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/DashboardActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/DashboardActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dashboard_layout.xml" afterPath="$PROJECT_DIR$/res/layout/dashboard_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ecl_health_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364866440812" ignored="false" />
-    <file path="/strings.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364776146087" ignored="false" />
-    <file path="/DashboardActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1363573658445" ignored="false" />
+    <file path="/Dummy.txt" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364954465276" ignored="false" />
+    <file path="/strings.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364957478876" ignored="false" />
+    <file path="/DashboardActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364954879841" ignored="false" />
     <file path="/SignUpActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364870652861" ignored="false" />
     <file path="/a.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364762588802" ignored="false" />
     <file path="/WelcomeActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364860002570" ignored="false" />
     <file path="/SQLiteHelper.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364874029302" ignored="false" />
     <file path="/User.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364783715727" ignored="false" />
     <file path="/UserDataSource.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364859905276" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364859008620" ignored="false" />
-    <file path="/fragment.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364882801863" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364955321833" ignored="false" />
+    <file path="/fragment.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364954682373" ignored="false" />
     <file path="/BloodPressureItem.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364874535501" ignored="false" />
     <file path="/WeightItem.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364874623640" ignored="false" />
     <file path="/ExerciseItem.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364874895707" ignored="false" />
     <file path="/BloodPressureDataSource.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364880832526" ignored="false" />
     <file path="/WeightDataSource.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364881216890" ignored="false" />
     <file path="/ExerciseDataSource.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364882576794" ignored="false" />
+    <file path="/dashboard_layout.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364954972738" ignored="false" />
+    <file path="/ExerciseDate.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364954351359" ignored="false" />
+    <file path="/BloodPressureData.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364957526352" ignored="false" />
+    <file path="/WeightData.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364954493007" ignored="false" />
+    <file path="/RecordBloodPressureActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364957289006" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +133,86 @@
     <favorites_list name="ecl_health_app" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DashboardActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/DashboardActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="47" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/SignUpActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="15" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordBloodPressureActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordBloodPressureActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="8" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.5319149">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="record_bloodpressure_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/record_bloodpressure_layout.xml">
+          <provider editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="17" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/dashboard_layout.xml">
+          <provider editor-type-id="text-editor">
+            <state line="41" column="39" selection-start="1624" selection-end="1624" vertical-scroll-proportion="-9.68">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordWeightActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordWeightActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="48" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -147,22 +230,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/welcome_layout.xml" />
-        <option value="$PROJECT_DIR$/res/layout/sign_up_layout.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/User.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WelcomeActivity.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SignUpActivity.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/SQLiteHelper.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/UserDataSource.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/BloodPressureItem.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WeightItem.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/ExerciseItem.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/BloodPressureDataSource.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/WeightDataSource.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/ExerciseDataSource.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/ExerciseDataSource.java" />
+        <option value="$PROJECT_DIR$/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/exercise_layout.xml" />
+        <option value="$PROJECT_DIR$/res/menu/settings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/bloodpressure_layout.xml" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/BloodPressureData.java" />
+        <option value="$PROJECT_DIR$/res/layout/weight_layout.xml" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/WeightData.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/ExerciseDate.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordExerciseActivity.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordWeightActivity.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/DashboardActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/dashboard_layout.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordBloodPressureActivity.java" />
       </list>
     </option>
   </component>
@@ -311,6 +394,60 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecl_health_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecl_health_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecl_health_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecl_health_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecl_health_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ecl_health_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -342,6 +479,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cs.ecl.karpAndMamidala.tawmylf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="cs.ecl.karpAndMamidala.tawmylf.Database" />
@@ -520,9 +660,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1003" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3244397" sideWeight="0.6704417" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32497332" sideWeight="0.6704417" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19850586" sideWeight="0.6874292" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -533,18 +676,15 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33069083" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11366062" sideWeight="0.6874292" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31257078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32604057" sideWeight="0.6874292" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21184632" sideWeight="0.6704417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31257078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32604057" sideWeight="0.6874292" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -611,95 +751,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/dashboard_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/welcome_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/sign_up_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state line="31" column="15" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/SignUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="70" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/SQLiteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="56" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/BloodPressureItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="4" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/ExerciseItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/UserDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/WeightItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/WeightDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="28" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.7668394">
@@ -718,19 +769,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.54404145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/BloodPressureDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="62" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.7512953">
           <folding>
             <element signature="e#2144#2163#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="297" selection-end="297" vertical-scroll-proportion="0.2166065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="301" selection-end="301" vertical-scroll-proportion="0.2166065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/record_exercise_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="15" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.23149905">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/record_weight_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.740038">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordWeightActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordExerciseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/dashboard_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="41" column="39" selection-start="1624" selection-end="1624" vertical-scroll-proportion="-9.68">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/record_bloodpressure_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/DashboardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="47" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/SignUpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="15" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/RecordBloodPressureActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="8" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.5319149">
+          <folding />
         </state>
       </provider>
     </entry>
