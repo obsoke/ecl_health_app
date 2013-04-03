@@ -17,7 +17,8 @@
                   android:label="SignUpActivity"
                   android:noHistory="true"></activity>
         <activity android:name=".Activities.DashboardActivity"
-                  android:label="DashboardActivity"/>
+                  android:label="DashboardActivity"
+                  android:launchMode="singleTop" />
         <activity android:name=".Activities.RecordBloodPressureActivity"
                   android:label="RecordBloodPressureActivity"
                   android:noHistory="true"></activity>
@@ -27,5 +28,6 @@
         <activity android:name=".Activities.RecordExerciseActivity"
                   android:label="RecordExerciseActivity"
                   android:noHistory="true"></activity>
+        <activity android:name=".Activities.GraphExerciseActivity"/>
     </application>
 </manifest>

@@ -38,7 +38,7 @@ public class BloodPressureDataSource {
         dbHelper.close();
     }
 
-    public BloodPressureItem createBloodPressureItem(int date, float sPressure, float dPressure, float hr) {
+    public BloodPressureItem createBloodPressureItem(float date, float sPressure, float dPressure, float hr) {
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.COLUMN_BP_DATE, date);
         values.put(SQLiteHelper.COLUMN_BP_SYSTOLIC_PRESSURE, sPressure);

@@ -38,7 +38,7 @@ public class ExerciseDataSource {
         dbHelper.close();
     }
 
-    public ExerciseItem createExerciseItem(int date, String type, int duration, int intensity) {
+    public ExerciseItem createExerciseItem(long date, String type, int duration, int intensity) {
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.COLUMN_EXER_DATE, date);
         values.put(SQLiteHelper.COLUMN_EXER_TYPE, type);

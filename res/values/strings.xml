@@ -3,7 +3,13 @@
     <string name="app_name">This App Will Make You Live Forever</string>
 
     <!-- toasts -->
-    <string name="toast_bp_success">Blood pressure entry created!</string>
+    <string name="bp_success">Blood pressure entry created!</string>
+    <string name="weight_success">Weight entry created!</string>
+    <string name="exercise_success">Exercise entry created!</string>
+    <string name="error_gender">Please select a gender.</string>
+    <string name="error_entire_form">Please fill out the entire sign-up form.</string>
+    <string name="error_form_fields">Please fill out all form fields.</string>
+
     <!-- welcome_layout -->
     <string name="welcome">Welcome to</string>
     <string name="instructions">It seems this is your first time using the app. Hit the button below to begin.</string>
@@ -23,21 +29,17 @@
     <string name="rb_male">Male</string>
     <string name="rb_female">Female</string>
 
-    <string name="success_creating_user">Creating user...</string>
-    <string name="error_gender">Please select a gender.</string>
-    <string name="error_entire_form">Please fill out the entire sign-up form.</string>
-
     <!-- dashboard_layout -->
     <string name="dashboard_msg">Hello User, What would you like to do today ?</string>
     <string name="main_menu">Main Menu</string>
     <string name="menu_settings">Settings</string>
+    <string name="header_bp">Blood Pressure</string>
+    <string name="header_weight">Weight</string>
+    <string name="header_exercise">Exercise</string>
 
-    <string name="record_bp">Record Blood Pressure</string>
-    <string name="record_exercise">Record Exercise</string>
-    <string name="record_weight">Record Weight</string>
-    <string name="view_bp">BP Stats</string>
-    <string name="view_exercise">Exercise Stats</string>
-    <string name="view_weight">Weight Stats</string>
+    <string name="dash_record">+</string>
+    <string name="dash_graph">View Graph</string>
+    <string name="dash_analytics">View Analytics</string>
 
     <string name="title_activity_blood_pressure_data">BloodPressureData</string>
     <string name="bp_msg">Please enter your Blood Pressure Data</string>

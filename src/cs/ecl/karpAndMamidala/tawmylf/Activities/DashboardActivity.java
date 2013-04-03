@@ -40,4 +40,9 @@ public class DashboardActivity extends Activity {
         Intent i = new Intent(this, RecordExerciseActivity.class);
         startActivity(i);
     }
+
+    public void onClickGraphExercise(View view) {
+        Intent i = new Intent(this, GraphExerciseActivity.class);
+        startActivity(i);
+    }
 }

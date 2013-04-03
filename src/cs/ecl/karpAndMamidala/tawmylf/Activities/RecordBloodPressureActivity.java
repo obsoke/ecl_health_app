@@ -10,6 +10,8 @@ import android.widget.Toast;
 import cs.ecl.karpAndMamidala.tawmylf.Database.BloodPressureDataSource;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 
+import java.util.Date;
+
 public class RecordBloodPressureActivity extends Activity {
     private BloodPressureDataSource dataSource;
 
@@ -28,7 +30,7 @@ public class RecordBloodPressureActivity extends Activity {
 		return true;
 	}
 
-    public void onSubmit(View view) {
+    public void onBPSubmit(View view) {
         EditText sysTV = (EditText)findViewById(R.id.systolic);
         EditText diaTV = (EditText)findViewById(R.id.diastolic);
         EditText hrTV = (EditText)findViewById(R.id.pulse_rate);
@@ -40,7 +42,7 @@ public class RecordBloodPressureActivity extends Activity {
         if(systolic.isEmpty() ||
            diastolic.isEmpty() ||
            heartrate.isEmpty()) {
-            //TODO: show error message
+            Toast.makeText(getBaseContext(), R.string.error_form_fields, Toast.LENGTH_SHORT).show();
             return;
         }
         float sys = Float.parseFloat(systolic);
@@ -49,13 +51,15 @@ public class RecordBloodPressureActivity extends Activity {
 
         dataSource.open();
         //TODO: create new entry
+        Date d = new Date();
+        dataSource.createBloodPressureItem(d.getTime(), sys, dia, hr);
         dataSource.close();
 
         // show success toast
-        Toast.makeText(getBaseContext(), R.string.toast_bp_success, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getBaseContext(), R.string.bp_success, Toast.LENGTH_SHORT).show();
 
-        //TODO: make sure DashboardActivity being started is original one
         Intent i = new Intent(this, DashboardActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(i);
     }
 

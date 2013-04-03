@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 import cs.ecl.karpAndMamidala.tawmylf.Models.User;
 import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
@@ -29,7 +30,6 @@ public class SignUpActivity extends Activity {
 
     public void signUp(View v) {
         // get value/validate form
-        TextView tv_error = (TextView) findViewById(R.id.tv_error);
         final EditText et_name = (EditText) findViewById(R.id.et_signup_name);
         final EditText et_address = (EditText) findViewById(R.id.et_signup_address);
         final EditText et_phone = (EditText) findViewById(R.id.et_signup_phone);
@@ -54,7 +54,7 @@ public class SignUpActivity extends Activity {
             gender = 1;
         }
         else {
-            tv_error.setText(R.string.error_gender);
+            Toast.makeText(getBaseContext(), R.string.error_gender, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -64,11 +64,9 @@ public class SignUpActivity extends Activity {
                 emerg_name.isEmpty() ||
                 emerg_address.isEmpty() ||
                 emerg_phone.isEmpty()) {
-            tv_error.setText(R.string.error_entire_form);
+            Toast.makeText(getBaseContext(), R.string.error_entire_form, Toast.LENGTH_SHORT).show();
             return;
         }
-
-        tv_error.setText(R.string.success_creating_user);
 
         User user = null;
         dataSource.open();

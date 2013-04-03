@@ -1,68 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" android:orientation="vertical">
 
 <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tv_dashboard_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dashboard_msg" />
+        android:text="@string/dashboard_msg" android:layout_gravity="center" android:textStyle="bold"
+        android:textSize="20dp"/>
 
-<Button
-        android:id="@+id/btn_record_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_record_bp"
-        android:layout_below="@+id/btn_record_bp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/record_weight" android:onClick="onClickRecordWeight"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_bp"
+            android:id="@+id/tv_header_bp" android:autoText="true" android:textSize="20dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/btn_record_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/tv_dashboard_welcome"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dash_record" android:onClick="onClickRecordBP"/>
+        <Button
+                android:id="@+id/btn_stats_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_record_exer"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dash_analytics" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_graph"
+                android:id="@+id/btn_graph_bp" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_weight"
+            android:id="@+id/tv_header_weight" android:layout_gravity="left|center_vertical" android:textSize="20dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="left">
+        <Button
+            android:id="@+id/btn_record_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_record_bp"
+            android:layout_below="@+id/btn_record_bp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dash_record" android:onClick="onClickRecordWeight"/>
+        <Button
+                android:id="@+id/btn_stats_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btn_record_weight"
+                android:layout_below="@+id/btn_stats_bp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/dash_analytics" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_graph"
+                android:id="@+id/btn_graph_weight"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_exercise"
+            android:id="@+id/tv_header_exercise" android:layout_gravity="left|center_vertical" android:textSize="20dp"/>
 
-<Button
-        android:id="@+id/btn_record_exer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_record_weight"
-        android:layout_below="@+id/btn_record_weight"
-        android:layout_centerHorizontal="true"
-        android:text="@string/record_exercise" android:onClick="onClickRecordExercise"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_record_exer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_record_weight"
+            android:layout_below="@+id/btn_record_weight"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dash_record" android:onClick="onClickRecordExercise"/>
+        <Button
+            android:id="@+id/btn_stats_exer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_stats_weight"
+            android:layout_below="@+id/btn_stats_weight"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dash_analytics" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_graph"
+                android:id="@+id/btn_graph_exer" android:onClick="onClickGraphExercise"/>
+    </LinearLayout>
 
-<Button
-        android:id="@+id/btn_stats_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btn_record_weight"
-        android:layout_below="@+id/btn_stats_bp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/view_weight" />
-
-<Button
-        android:id="@+id/btn_stats_exer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btn_stats_weight"
-        android:layout_below="@+id/btn_stats_weight"
-        android:layout_centerHorizontal="true"
-        android:text="@string/view_exercise" />
-
-<Button
-        android:id="@+id/btn_stats_bp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_record_exer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:text="@string/view_bp" />
-
-<Button
-        android:id="@+id/btn_record_bp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:text="@string/record_bp" android:onClick="onClickRecordBP"/>
-
-</RelativeLayout>
+</LinearLayout>
