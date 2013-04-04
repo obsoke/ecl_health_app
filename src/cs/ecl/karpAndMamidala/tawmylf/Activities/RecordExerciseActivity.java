@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 import cs.ecl.karpAndMamidala.tawmylf.Database.ExerciseDataSource;
 import cs.ecl.karpAndMamidala.tawmylf.R;
@@ -21,25 +23,24 @@ public class RecordExerciseActivity extends Activity {
 		setContentView(R.layout.record_exercise_layout);
 
         dataSource = new ExerciseDataSource(this);
-	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.settings, menu);
-		return true;
+        // set up spinner
+        Spinner spinner = (Spinner) findViewById(R.id.exercise_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.record_bp_spinner,
+                android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 	}
 
     public void onWeightSubmit(View view) {
-        EditText typeTV = (EditText)findViewById(R.id.exercise_type);
+        Spinner typeSpinner = (Spinner)findViewById(R.id.exercise_spinner);
         EditText durationTV = (EditText)findViewById(R.id.exercise_duration);
         EditText intensityTV = (EditText)findViewById(R.id.exercise_intensity);
 
-        String typeStr = typeTV.getText().toString();
+        String typeStr = typeSpinner.getSelectedItem().toString();
         String durationStr = durationTV.getText().toString();
         String intensityStr = intensityTV.getText().toString();
-        if(typeStr.isEmpty() ||
-                durationStr.isEmpty() ||
+        if(durationStr.isEmpty() ||
                 intensityStr.isEmpty()) {
             Toast.makeText(getBaseContext(), R.string.error_form_fields, Toast.LENGTH_SHORT).show();
             return;

@@ -1,12 +1,11 @@
 package cs.ecl.karpAndMamidala.tawmylf.Activities;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import cs.ecl.karpAndMamidala.tawmylf.Database.BloodPressureDataSource;
 import cs.ecl.karpAndMamidala.tawmylf.Database.ExerciseDataSource;
-import cs.ecl.karpAndMamidala.tawmylf.Models.BloodPressureItem;
 import cs.ecl.karpAndMamidala.tawmylf.Models.ExerciseItem;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 import org.achartengine.ChartFactory;
@@ -17,11 +16,13 @@ import org.achartengine.model.XYMultipleSeriesDataset;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
 import org.achartengine.renderer.XYSeriesRenderer;
 
-import java.util.List;
+import java.util.*;
 
 public class GraphExerciseActivity extends Activity {
     private GraphicalView theChart;
     private ExerciseDataSource dataSource;
+    private ArrayList<ExerciseItem> cardioItems;
+    private ArrayList<ExerciseItem> strengthItems;
     private XYMultipleSeriesDataset theDataset = new XYMultipleSeriesDataset();
     private XYMultipleSeriesRenderer theRenderer = new XYMultipleSeriesRenderer();
 
@@ -32,6 +33,7 @@ public class GraphExerciseActivity extends Activity {
         dataSource = new ExerciseDataSource(this);
 
         initChart();
+        generateBPData();
         generateBPGraph();
     }
 
@@ -51,23 +53,49 @@ public class GraphExerciseActivity extends Activity {
         theRenderer.setShowCustomTextGrid(true);
     }
 
-    private void generateBPGraph() {
-        // initialize series
-        TimeSeries series = new TimeSeries("Exercise");
-        theDataset.addSeries(series);
-        XYSeriesRenderer renderer = new XYSeriesRenderer();
-        theRenderer.addSeriesRenderer(renderer);
-        // TODO: renderer properties
-        renderer.setPointStyle(PointStyle.CIRCLE);
-        renderer.setFillPoints(true);
-
-        // populate list with values from DB & add to series
+    private void generateBPData() {
+        cardioItems = new ArrayList<ExerciseItem>();
+        strengthItems = new ArrayList<ExerciseItem>();
+        // populate list with values from DB
         dataSource.open();
         List<ExerciseItem> itemList = dataSource.getAllExerciseItems();
-        for (ExerciseItem i: itemList) {
-            // TODO: add data to graph
-        }
         dataSource.close();
+        for (ExerciseItem i: itemList) {
+            if (i.getType().equalsIgnoreCase("Cardio")) {
+                cardioItems.add(i);
+            }
+            else {
+                strengthItems.add(i);
+            }
+        } // end for each
+    } // end generateBPData()
+
+    private void generateBPGraph() {
+        // initialize series
+        TimeSeries strengthSeries = new TimeSeries("Stength Exercise");
+        TimeSeries cardioSeries = new TimeSeries("Cardio Exercise");
+        theDataset.addSeries(strengthSeries);
+        theDataset.addSeries(cardioSeries);
+        XYSeriesRenderer strengthRenderer = new XYSeriesRenderer();
+        XYSeriesRenderer cardioRenderer = new XYSeriesRenderer();
+        theRenderer.addSeriesRenderer(strengthRenderer);
+        theRenderer.addSeriesRenderer(cardioRenderer);
+        // renderer properties
+        strengthRenderer.setPointStyle(PointStyle.CIRCLE);
+        strengthRenderer.setFillPoints(true);
+        strengthRenderer.setColor(Color.RED);
+        cardioRenderer.setPointStyle(PointStyle.DIAMOND);
+        cardioRenderer.setFillPoints(true);
+
+        // populate strength series
+        for (ExerciseItem i: strengthItems) {
+            strengthSeries.add(i.getDate(), i.getIntensity());
+        }
+
+        // populate cardio series
+        for (ExerciseItem i: cardioItems) {
+            cardioSeries.add(i.getDate(), i.getDuration());
+        }
         // re-draw graph
         theChart.repaint();
     }

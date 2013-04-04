@@ -60,4 +60,9 @@
     <string name="weight_info">Weight in Pounds</string>
     <string name="submit_weight">Submit</string>
 
+    <string-array name="record_bp_spinner">
+        <item>Cardio</item>
+        <item>Stength</item>
+    </string-array>
+
 </resources>

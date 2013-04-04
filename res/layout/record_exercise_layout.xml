@@ -10,19 +10,13 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:text="@string/exercise_msg" android:layout_gravity="center"/>
-    <EditText
-            android:id="@+id/exercise_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/exercise_duration"
-            android:layout_below="@+id/exercise_msg"
-            android:ems="10"
-            android:hint="@string/exercise_type" />
 
     <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner" android:focusable="true"/>
+            android:id="@+id/exercise_spinner"
+            android:focusable="true"/>
+
     <EditText
             android:id="@+id/exercise_duration"
             android:layout_width="wrap_content"
@@ -46,5 +40,5 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/exercise_intensity"
             android:layout_centerHorizontal="true"
-            android:text="@string/submit_exercise" />
+            android:text="@string/submit_exercise" android:onClick="onWeightSubmit"/>
 </LinearLayout>
