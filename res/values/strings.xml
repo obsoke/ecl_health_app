@@ -51,8 +51,8 @@
     <string name="title_activity_exercise_date">ExerciseDate</string>
     <string name="exercise_msg">Please enter your Exercise Information</string>
     <string name="exercise_type">Type</string>
-    <string name="exercise_duration">duration</string>
-    <string name="exercise_intensity">intensity</string>
+    <string name="exercise_duration">Duration</string>
+    <string name="exercise_intensity">Intensity</string>
     <string name="submit_exercise">Submit</string>
 
     <string name="title_activity_weight_data">WeightData</string>

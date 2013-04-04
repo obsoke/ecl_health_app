@@ -28,7 +28,8 @@
         <activity android:name=".Activities.RecordExerciseActivity"
                   android:label="RecordExerciseActivity"
                   android:noHistory="true"></activity>
-        <activity android:name=".Activities.GraphExerciseActivity"/>
         <activity android:name=".Activities.GraphWeightActivity"/>
+        <activity android:name=".Activities.GraphBPActivity"></activity>
+        <activity android:name=".Activities.GraphExerciseActivity"></activity>
     </application>
 </manifest>

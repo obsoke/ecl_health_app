@@ -31,6 +31,11 @@ public class DashboardActivity extends Activity {
         startActivity(i);
     }
 
+    public void onClickGraphBP(View view) {
+        Intent i = new Intent(this, GraphBPActivity.class);
+        startActivity(i);
+    }
+
     public void onClickRecordWeight(View view) {
         Intent i = new Intent(this, RecordWeightActivity.class);
         startActivity(i);

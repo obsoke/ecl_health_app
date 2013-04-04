@@ -73,7 +73,7 @@ public class ExerciseDataSource {
     private ExerciseItem cursorToExerItem(Cursor cursor) {
         ExerciseItem exerciseItem = new ExerciseItem();
         exerciseItem.setId(cursor.getLong(0));
-        exerciseItem.setDate(cursor.getInt(1));
+        exerciseItem.setDate(cursor.getLong(1));
         exerciseItem.setType(cursor.getString(2));
         exerciseItem.setDuration(cursor.getInt(3));
         exerciseItem.setIntensity(cursor.getInt(4));

@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dash_graph"
-                android:id="@+id/btn_graph_bp" android:singleLine="true"/>
+                android:id="@+id/btn_graph_bp" android:singleLine="true" android:onClick="onClickGraphBP"/>
     </LinearLayout>
     <TextView
             android:layout_width="wrap_content"

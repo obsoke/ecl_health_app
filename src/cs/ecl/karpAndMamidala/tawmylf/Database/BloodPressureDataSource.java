@@ -38,7 +38,7 @@ public class BloodPressureDataSource {
         dbHelper.close();
     }
 
-    public BloodPressureItem createBloodPressureItem(float date, float sPressure, float dPressure, float hr) {
+    public BloodPressureItem createBloodPressureItem(long date, float sPressure, float dPressure, float hr) {
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.COLUMN_BP_DATE, date);
         values.put(SQLiteHelper.COLUMN_BP_SYSTOLIC_PRESSURE, sPressure);
@@ -73,7 +73,7 @@ public class BloodPressureDataSource {
     private BloodPressureItem cursorToBPItem(Cursor cursor) {
         BloodPressureItem bpItem = new BloodPressureItem();
         bpItem.setId(cursor.getLong(0));
-        bpItem.setDate(cursor.getInt(1));
+        bpItem.setDate(cursor.getLong(1));
         bpItem.setSystolicPressure(cursor.getFloat(2));
         bpItem.setDiastolicPressure(cursor.getFloat(3));
         bpItem.setHeartrate(cursor.getFloat(4));

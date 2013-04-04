@@ -37,7 +37,7 @@ public class WeightDataSource {
         dbHelper.close();
     }
 
-    public WeightItem createWeightItem(float date, float weight) {
+    public WeightItem createWeightItem(long date, float weight) {
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.COLUMN_WEIGHT_DATE, date);
         values.put(SQLiteHelper.COLUMN_WEIGHT_WEIGHT, weight);

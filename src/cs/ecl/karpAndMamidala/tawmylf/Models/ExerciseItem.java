@@ -28,7 +28,7 @@ public class ExerciseItem {
         return date;
     }
 
-    public void setDate(int utcTime) {
+    public void setDate(long utcTime) {
         this.date = new Date(utcTime);
     }
 
