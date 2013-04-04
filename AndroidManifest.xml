@@ -29,8 +29,10 @@
                   android:label="@string/data_exercise"
                   android:noHistory="true"></activity>
         <activity android:name=".Activities.GraphWeightActivity"
-                  android:label="@string/graph_weight_name"></activity>
+                  android:label="@string/graph_weight_name"
+                  android:noHistory="true"></activity>
         <activity android:name=".Activities.GraphBPActivity"
-                  android:label="@string/graph_bp_name"></activity>
+                  android:label="@string/graph_bp_name"
+                  android:noHistory="true"></activity>
     </application>
 </manifest>

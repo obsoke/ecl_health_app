@@ -25,13 +25,6 @@ public class RecordBloodPressureActivity extends Activity {
         dataSource = new BloodPressureDataSource(this);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.settings, menu);
-		return true;
-	}
-
     public void onBPSubmit(View view) {
         EditText sysTV = (EditText)findViewById(R.id.systolic);
         EditText diaTV = (EditText)findViewById(R.id.diastolic);
