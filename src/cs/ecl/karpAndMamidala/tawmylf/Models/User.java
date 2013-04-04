@@ -1,12 +1,5 @@
 package cs.ecl.karpAndMamidala.tawmylf.Models;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dale
- * Date: 2013-03-31
- * Time: 10:30 PM
- * To change this template use File | Settings | File Templates.
- */
 public class User {
     private long id;
     private String name;
