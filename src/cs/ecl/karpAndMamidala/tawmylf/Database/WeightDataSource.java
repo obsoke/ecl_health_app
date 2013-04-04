@@ -70,7 +70,7 @@ public class WeightDataSource {
     private WeightItem cursorToWeightItem(Cursor cursor) {
         WeightItem weightItem = new WeightItem();
         weightItem.setId(cursor.getLong(0));
-        weightItem.setDate(cursor.getInt(1));
+        weightItem.setDate(cursor.getLong(1));
         weightItem.setWeight(cursor.getFloat(2));
         return weightItem;
     }

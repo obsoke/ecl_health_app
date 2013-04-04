@@ -36,6 +36,11 @@ public class DashboardActivity extends Activity {
         startActivity(i);
     }
 
+    public void onClickGraphWeight(View view) {
+        Intent i = new Intent(this, GraphWeightActivity.class);
+        startActivity(i);
+    }
+
     public void onClickRecordExercise(View view) {
         Intent i = new Intent(this, RecordExerciseActivity.class);
         startActivity(i);

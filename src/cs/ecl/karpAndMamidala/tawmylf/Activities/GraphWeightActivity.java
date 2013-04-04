@@ -1,12 +1,19 @@
 package cs.ecl.karpAndMamidala.tawmylf.Activities;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.LinearLayout;
 import cs.ecl.karpAndMamidala.tawmylf.Database.WeightDataSource;
 import cs.ecl.karpAndMamidala.tawmylf.Models.ExerciseItem;
 import cs.ecl.karpAndMamidala.tawmylf.Models.WeightItem;
 import cs.ecl.karpAndMamidala.tawmylf.R;
+import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
+import org.achartengine.chart.PointStyle;
+import org.achartengine.model.TimeSeries;
 import org.achartengine.model.XYMultipleSeriesDataset;
 import org.achartengine.model.XYSeries;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
@@ -15,12 +22,10 @@ import org.achartengine.renderer.XYSeriesRenderer;
 import java.util.List;
 
 public class GraphWeightActivity extends Activity {
-    private WeightDataSource dataSource;
     private GraphicalView theChart;
-    private XYSeries currentSeries;
-    private XYSeriesRenderer currentSeriesRenderer;
-    private XYMultipleSeriesDataset theDataset;
-    private XYMultipleSeriesRenderer theRenderer;
+    private WeightDataSource dataSource;
+    private XYMultipleSeriesDataset theDataset = new XYMultipleSeriesDataset();
+    private XYMultipleSeriesRenderer theRenderer = new XYMultipleSeriesRenderer();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,26 +33,45 @@ public class GraphWeightActivity extends Activity {
 
         dataSource = new WeightDataSource(this);
 
-        currentSeries = new XYSeries("Weight");
-        theDataset = new XYMultipleSeriesDataset();
-        theRenderer = new XYMultipleSeriesRenderer();
-        currentSeriesRenderer = new XYSeriesRenderer();
-        theRenderer.addSeriesRenderer(currentSeriesRenderer);
-
-        theDataset.addSeries(currentSeries);
+        initChart();
         generateWeightGraph();
     }
 
+    private void initChart() {
+        // initialize chart
+        if(theChart == null) {
+            LinearLayout layout = (LinearLayout) findViewById(R.id.chart);
+            theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd @ hh:mm");
+            // TODO: set up theRenderer
+            layout.addView(theChart, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.MATCH_PARENT));
+        }
+        else {
+            theChart.repaint();
+        }
+        // TODO: renderer settings
+        theRenderer.setShowCustomTextGrid(true);
+    }
+
     private void generateWeightGraph() {
+        // initialize series
+        TimeSeries series = new TimeSeries("Weight");
+        theDataset.addSeries(series);
+        XYSeriesRenderer renderer = new XYSeriesRenderer();
+        theRenderer.addSeriesRenderer(renderer);
+        // TODO: renderer properties
+        renderer.setPointStyle(PointStyle.CIRCLE);
+        renderer.setFillPoints(true);
+
+        // populate list with values from DB & add to series
         dataSource.open();
         List<WeightItem> itemList = dataSource.getAllWeightItems();
         for (WeightItem i: itemList) {
             // TODO: add data to graph
-            long date = i.getDate().getTime();
-            float weight = i.getWeight();
-            currentSeries.add(date, weight);
+            series.add(i.getDate(), i.getWeight());
         }
         dataSource.close();
-
+        // re-draw graph
+        theChart.repaint();
     }
 }

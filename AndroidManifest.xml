@@ -29,5 +29,6 @@
                   android:label="RecordExerciseActivity"
                   android:noHistory="true"></activity>
         <activity android:name=".Activities.GraphExerciseActivity"/>
+        <activity android:name=".Activities.GraphWeightActivity"/>
     </application>
 </manifest>
