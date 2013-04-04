@@ -10,13 +10,6 @@ import cs.ecl.karpAndMamidala.tawmylf.Models.BloodPressureItem;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dale
- * Date: 2013-03-31
- * Time: 10:37 PM
- * To change this template use File | Settings | File Templates.
- */
 public class BloodPressureDataSource {
     private SQLiteDatabase db;
     private SQLiteHelper dbHelper;

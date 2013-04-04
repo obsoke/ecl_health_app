@@ -12,13 +12,6 @@ import cs.ecl.karpAndMamidala.tawmylf.R;
 import cs.ecl.karpAndMamidala.tawmylf.Models.User;
 import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dale
- * Date: 3/17/13
- * Time: 10:04 PM
- * To change this template use File | Settings | File Templates.
- */
 public class SignUpActivity extends Activity {
     private UserDataSource dataSource;
     public void onCreate(Bundle savedInstanceState) {

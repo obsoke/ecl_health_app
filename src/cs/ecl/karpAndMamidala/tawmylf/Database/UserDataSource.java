@@ -8,13 +8,6 @@ import android.database.sqlite.SQLiteException;
 import cs.ecl.karpAndMamidala.tawmylf.Database.SQLiteHelper;
 import cs.ecl.karpAndMamidala.tawmylf.Models.User;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dale
- * Date: 2013-03-31
- * Time: 10:37 PM
- * To change this template use File | Settings | File Templates.
- */
 public class UserDataSource {
     private SQLiteDatabase db;
     private SQLiteHelper dbHelper;

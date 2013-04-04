@@ -7,13 +7,6 @@ import android.view.Menu;
 import android.view.View;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dale
- * Date: 3/17/13
- * Time: 10:03 PM
- * To change this template use File | Settings | File Templates.
- */
 public class DashboardActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
