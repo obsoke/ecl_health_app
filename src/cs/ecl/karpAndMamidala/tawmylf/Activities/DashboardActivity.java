@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 
@@ -11,6 +12,13 @@ public class DashboardActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_layout);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.settings, menu);
+        return true;
     }
 
     public void onClickRecordBP(View view) {
@@ -35,11 +43,6 @@ public class DashboardActivity extends Activity {
 
     public void onClickRecordExercise(View view) {
         Intent i = new Intent(this, RecordExerciseActivity.class);
-        startActivity(i);
-    }
-
-    public void onClickGraphExercise(View view) {
-        Intent i = new Intent(this, GraphExerciseActivity.class);
         startActivity(i);
     }
 }

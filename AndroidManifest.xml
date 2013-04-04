@@ -14,22 +14,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.SignUpActivity"
-                  android:label="SignUpActivity"
+                  android:label="@string/sign_up_button"
                   android:noHistory="true"></activity>
         <activity android:name=".Activities.DashboardActivity"
-                  android:label="DashboardActivity"
+                  android:label="@string/app_name"
                   android:launchMode="singleTop" />
         <activity android:name=".Activities.RecordBloodPressureActivity"
-                  android:label="RecordBloodPressureActivity"
+                  android:label="@string/data_bp"
                   android:noHistory="true"></activity>
         <activity android:name=".Activities.RecordWeightActivity"
-                  android:label="RecordWeightActivity"
+                  android:label="@string/data_weight"
                   android:noHistory="true"></activity>
         <activity android:name=".Activities.RecordExerciseActivity"
-                  android:label="RecordExerciseActivity"
+                  android:label="@string/data_exercise"
                   android:noHistory="true"></activity>
-        <activity android:name=".Activities.GraphWeightActivity"/>
-        <activity android:name=".Activities.GraphBPActivity"></activity>
-        <activity android:name=".Activities.GraphExerciseActivity"></activity>
+        <activity android:name=".Activities.GraphWeightActivity"
+                  android:label="@string/graph_weight_name"></activity>
+        <activity android:name=".Activities.GraphBPActivity"
+                  android:label="@string/graph_bp_name"></activity>
     </application>
 </manifest>

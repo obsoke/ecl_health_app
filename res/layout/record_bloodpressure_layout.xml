@@ -13,18 +13,6 @@
             android:layout_marginTop="56dp"
             android:ems="10"
             android:hint="@string/systolic" android:inputType="numberDecimal"/>
-
-
-
-    <TextView
-            android:id="@+id/bp_msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="30dp"
-            android:text="@string/bp_msg" />
-
     <EditText
             android:id="@+id/diastolic"
             android:layout_width="wrap_content"
@@ -34,7 +22,6 @@
             android:layout_marginTop="28dp"
             android:ems="10"
             android:hint="@string/diastolic" android:inputType="numberDecimal">
-
     </EditText>
 
     <EditText

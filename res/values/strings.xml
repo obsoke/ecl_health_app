@@ -30,6 +30,8 @@
     <string name="rb_female">Female</string>
 
     <!-- dashboard_layout -->
+    <string name="graph_weight_name">Weight Graph</string>
+    <string name="graph_bp_name">Blood Pressure Graph</string>
     <string name="dashboard_msg">Hello User, What would you like to do today ?</string>
     <string name="main_menu">Main Menu</string>
     <string name="menu_settings">Settings</string>
@@ -41,22 +43,19 @@
     <string name="dash_graph">View Graph</string>
     <string name="dash_analytics">View Analytics</string>
 
-    <string name="title_activity_blood_pressure_data">BloodPressureData</string>
-    <string name="bp_msg">Please enter your Blood Pressure Data</string>
+    <string name="data_bp">Enter your current blood pressure</string>
     <string name="systolic">Systolic Pressure</string>
     <string name="diastolic">Diastolic Pressure</string>
-    <string name="pulse_rate">Heart beat rate</string>
+    <string name="pulse_rate">Heart rate</string>
     <string name="submit_bp">Submit</string>
 
-    <string name="title_activity_exercise_date">ExerciseDate</string>
-    <string name="exercise_msg">Please enter your Exercise Information</string>
+    <string name="data_exercise">Enter your last exercise</string>
     <string name="exercise_type">Type</string>
     <string name="exercise_duration">Duration</string>
     <string name="exercise_intensity">Intensity</string>
     <string name="submit_exercise">Submit</string>
 
-    <string name="title_activity_weight_data">WeightData</string>
-    <string name="weight_msg">Please enter your Weight information</string>
+    <string name="data_weight">Enter your current weight</string>
     <string name="weight_info">Weight in Pounds</string>
     <string name="submit_weight">Submit</string>
 
