@@ -60,6 +60,10 @@
     <string name="weight_info">Weight in Pounds</string>
     <string name="submit_weight">Submit</string>
 
+    <string name="menu_genUser">Generate User</string>
+    <string name="menu_yes">Yes please!</string>
+    <string name="menu_no">No thanks.</string>
+    <string name="action_genUser">Do you want to generate a dummy user?</string>
     <string name="action_deleteUser">Delete User</string>
     <string name="action_deleteDialogMsg">Are you sure you want to delete the user? All data will be deleted.</string>
     <string name="action_deleteYes">Delete me!</string>

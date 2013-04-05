@@ -78,4 +78,24 @@ public class UserDataSource {
         return user;
     }
 
+    public User generateDummyUser() {
+        this.open();
+        ContentValues values = new ContentValues();
+        values.put(SQLiteHelper.COLUMN_USER_NAME, "Ben Genderson");
+        values.put(SQLiteHelper.COLUMN_USER_GENDER, 0);
+        values.put(SQLiteHelper.COLUMN_USER_ADDRESS, "555 Bob Street");
+        values.put(SQLiteHelper.COLUMN_USER_PHONE, "9057773283");
+        values.put(SQLiteHelper.COLUMN_USER_EMERG_NAME, "Bob Bobbernob");
+        values.put(SQLiteHelper.COLUMN_USER_EMERG_ADDRESS, "229 Lord Lane");
+        values.put(SQLiteHelper.COLUMN_USER_EMERG_PHONE, "6473332938");
+
+        long insertId = db.insert(SQLiteHelper.TABLE_USER, null, values);
+        Cursor cursor = db.query(SQLiteHelper.TABLE_USER, columns,
+                SQLiteHelper.COLUMN_ID + " = " + insertId, null, null, null, null);
+        cursor.moveToFirst();
+        User newUser = cursorToUser(cursor);
+        cursor.close();
+        this.close();
+        return newUser;
+    }
 }
