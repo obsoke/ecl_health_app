@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf.Activities;
+package cs.ecl.karpAndMamidala.liveforever.Activities;
 
 import android.app.Activity;
 import android.app.DialogFragment;
@@ -9,11 +9,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import cs.ecl.karpAndMamidala.tawmylf.Database.BloodPressureDataSource;
-import cs.ecl.karpAndMamidala.tawmylf.Database.WeightDataSource;
-import cs.ecl.karpAndMamidala.tawmylf.Models.BloodPressureItem;
-import cs.ecl.karpAndMamidala.tawmylf.Models.WeightItem;
-import cs.ecl.karpAndMamidala.tawmylf.R;
+import cs.ecl.karpAndMamidala.liveforever.Database.BloodPressureDataSource;
+import cs.ecl.karpAndMamidala.liveforever.Models.BloodPressureItem;
+import cs.ecl.karpAndMamidala.liveforever.R;
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
 import org.achartengine.chart.PointStyle;

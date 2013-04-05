@@ -1,8 +1,7 @@
-package cs.ecl.karpAndMamidala.tawmylf.Activities;
+package cs.ecl.karpAndMamidala.liveforever.Activities;
 
 import android.app.Activity;
 import android.app.DialogFragment;
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,10 +9,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
-import cs.ecl.karpAndMamidala.tawmylf.Models.User;
-import cs.ecl.karpAndMamidala.tawmylf.R;
+import cs.ecl.karpAndMamidala.liveforever.Database.UserDataSource;
+import cs.ecl.karpAndMamidala.liveforever.Models.User;
+import cs.ecl.karpAndMamidala.liveforever.R;
 
 public class DashboardActivity extends Activity implements AlertDialogFragment.NoticeDialogListener {
     private UserDataSource dataSource;

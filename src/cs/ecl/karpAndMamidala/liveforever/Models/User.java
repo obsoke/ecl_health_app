@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf.Models;
+package cs.ecl.karpAndMamidala.liveforever.Models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

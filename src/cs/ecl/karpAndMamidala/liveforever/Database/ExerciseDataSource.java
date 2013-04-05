@@ -1,11 +1,11 @@
-package cs.ecl.karpAndMamidala.tawmylf.Database;
+package cs.ecl.karpAndMamidala.liveforever.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
-import cs.ecl.karpAndMamidala.tawmylf.Models.ExerciseItem;
+import cs.ecl.karpAndMamidala.liveforever.Models.ExerciseItem;
 
 import java.util.ArrayList;
 import java.util.List;

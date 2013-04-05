@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf.Activities;
+package cs.ecl.karpAndMamidala.liveforever.Activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -6,7 +6,6 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import cs.ecl.karpAndMamidala.tawmylf.R;
 
 public class AlertDialogFragment extends DialogFragment {
 

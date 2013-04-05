@@ -1,14 +1,12 @@
-package cs.ecl.karpAndMamidala.tawmylf.Database;
+package cs.ecl.karpAndMamidala.liveforever.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
-import cs.ecl.karpAndMamidala.tawmylf.Database.SQLiteHelper;
-import cs.ecl.karpAndMamidala.tawmylf.Models.WeightItem;
+import cs.ecl.karpAndMamidala.liveforever.Models.WeightItem;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;

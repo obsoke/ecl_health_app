@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf.Activities;
+package cs.ecl.karpAndMamidala.liveforever.Activities;
 
 import android.app.Activity;
 import android.app.DialogFragment;
@@ -8,9 +8,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import cs.ecl.karpAndMamidala.tawmylf.R;
-import cs.ecl.karpAndMamidala.tawmylf.Models.User;
-import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
+import cs.ecl.karpAndMamidala.liveforever.R;
+import cs.ecl.karpAndMamidala.liveforever.Models.User;
+import cs.ecl.karpAndMamidala.liveforever.Database.UserDataSource;
 
 public class WelcomeActivity extends Activity implements AlertDialogFragment.NoticeDialogListener{
     private UserDataSource dataSource;

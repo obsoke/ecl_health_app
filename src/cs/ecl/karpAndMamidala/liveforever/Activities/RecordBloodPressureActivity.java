@@ -1,16 +1,13 @@
-package cs.ecl.karpAndMamidala.tawmylf.Activities;
+package cs.ecl.karpAndMamidala.liveforever.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
-import cs.ecl.karpAndMamidala.tawmylf.Database.BloodPressureDataSource;
-import cs.ecl.karpAndMamidala.tawmylf.R;
+import cs.ecl.karpAndMamidala.liveforever.Database.BloodPressureDataSource;
+import cs.ecl.karpAndMamidala.liveforever.R;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package cs.ecl.karpAndMamidala.tawmylf.Database;
+package cs.ecl.karpAndMamidala.liveforever.Database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -38,7 +38,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String COLUMN_EXER_DURATION = "duration";
     public static final String COLUMN_EXER_INTENSITY = "intensity";
 
-    private static final String DB_NAME = "tawmylf.db";
+    private static final String DB_NAME = "liveforever.db";
     private static final int DB_VERSION = 2;
 
     private static final String DB_USER_CREATE = "create table "

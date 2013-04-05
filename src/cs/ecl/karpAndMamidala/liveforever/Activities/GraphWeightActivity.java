@@ -1,22 +1,19 @@
-package cs.ecl.karpAndMamidala.tawmylf.Activities;
+package cs.ecl.karpAndMamidala.liveforever.Activities;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.LinearLayout;
-import cs.ecl.karpAndMamidala.tawmylf.Database.WeightDataSource;
-import cs.ecl.karpAndMamidala.tawmylf.Models.ExerciseItem;
-import cs.ecl.karpAndMamidala.tawmylf.Models.WeightItem;
-import cs.ecl.karpAndMamidala.tawmylf.R;
+import cs.ecl.karpAndMamidala.liveforever.Database.WeightDataSource;
+import cs.ecl.karpAndMamidala.liveforever.Models.WeightItem;
+import cs.ecl.karpAndMamidala.liveforever.R;
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
 import org.achartengine.chart.PointStyle;
 import org.achartengine.model.TimeSeries;
 import org.achartengine.model.XYMultipleSeriesDataset;
-import org.achartengine.model.XYSeries;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
 import org.achartengine.renderer.XYSeriesRenderer;
 
