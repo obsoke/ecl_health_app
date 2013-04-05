@@ -28,8 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java" />
     </list>
     <ignored path="ecl_health_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +39,7 @@
     <file path="/a.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365099332616" ignored="false" />
     <file path="/WelcomeActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365123985177" ignored="false" />
     <file path="/SQLiteHelper.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365118840090" ignored="false" />
-    <file path="/User.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1364783715727" ignored="false" />
+    <file path="/User.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365190597111" ignored="false" />
     <file path="/UserDataSource.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365124010196" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365114632715" ignored="false" />
     <file path="/fragment.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365043418341" ignored="false" />
@@ -143,11 +142,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="79" selection-end="79" vertical-scroll-proportion="0.035005834">
+            <state line="39" column="28" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="0" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.84210527">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#782#788#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/WelcomeActivity.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/UserDataSource.java" />
         <option value="$PROJECT_DIR$/res/menu/graph_weight.xml" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Database/WeightDataSource.java" />
@@ -186,6 +196,7 @@
         <option value="$PROJECT_DIR$/res/layout/sign_up_layout.xml" />
         <option value="$PROJECT_DIR$/res/layout/record_bloodpressure_layout.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java" />
       </list>
     </option>
   </component>
@@ -701,13 +712,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.21276596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/ExerciseItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="42" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
@@ -824,8 +828,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="79" selection-end="79" vertical-scroll-proportion="0.035005834">
+        <state line="39" column="28" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.84210527">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#782#788#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
