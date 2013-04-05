@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">This App Will Make You Live Forever</string>
+    <string name="app_name">Live Forever</string>
 
     <!-- toasts -->
     <string name="bp_success">Blood pressure entry created!</string>
