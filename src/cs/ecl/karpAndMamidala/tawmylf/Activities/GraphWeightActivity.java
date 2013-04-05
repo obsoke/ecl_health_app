@@ -2,9 +2,9 @@ package cs.ecl.karpAndMamidala.tawmylf.Activities;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.os.Bundle;
-import android.view.ViewGroup;
-import android.view.WindowManager;
+import android.view.*;
 import android.widget.LinearLayout;
 import cs.ecl.karpAndMamidala.tawmylf.Database.WeightDataSource;
 import cs.ecl.karpAndMamidala.tawmylf.Models.ExerciseItem;
@@ -21,7 +21,7 @@ import org.achartengine.renderer.XYSeriesRenderer;
 
 import java.util.List;
 
-public class GraphWeightActivity extends Activity {
+public class GraphWeightActivity extends Activity implements AlertDialogFragment.NoticeDialogListener{
     private GraphicalView theChart;
     private WeightDataSource dataSource;
     private XYMultipleSeriesDataset theDataset = new XYMultipleSeriesDataset();
@@ -35,6 +35,27 @@ public class GraphWeightActivity extends Activity {
 
         initChart();
         generateWeightGraph();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.graph_weight, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_genWeight:
+                AlertDialogFragment frag = new AlertDialogFragment(R.string.action_genWeight,
+                        R.string.menu_yes,
+                        R.string.menu_no);
+                frag.show(getFragmentManager(), "AlertDialogFragment");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void initChart() {
@@ -73,5 +94,30 @@ public class GraphWeightActivity extends Activity {
         dataSource.close();
         // re-draw graph
         theChart.repaint();
+    }
+
+    private void generateWeightData() {
+        dataSource.generateWeightData();
+        //TODO: clear out data series
+        int isr = theRenderer.getSeriesRendererCount();
+        for (int i = 0; i < isr; i++) {
+            theRenderer.removeSeriesRenderer(theRenderer.getSeriesRendererAt(i));
+        }
+        int isd = theDataset.getSeriesCount();
+        for (int i = 0; i < isd; i++) {
+            theDataset.removeSeries(i);
+        }
+        this.generateWeightGraph();
+    }
+
+    @Override
+    public void onDialogPositiveClick(DialogFragment dialog) {
+        // delete user & data
+        this.generateWeightData();
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+        // do nothing
     }
 }

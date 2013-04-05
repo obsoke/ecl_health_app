@@ -22,7 +22,7 @@ public class BloodPressureItem {
     }
 
     public void setDate(long utcTime) {
-        this.date = new Date(utcTime);
+        this.date = new Date(utcTime * 1000);
     }
 
     public float getSystolicPressure() {

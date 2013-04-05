@@ -1,5 +1,7 @@
 package cs.ecl.karpAndMamidala.tawmylf.Models;
 
+import android.widget.Toast;
+
 import java.util.Date;
 
 public class WeightItem {
@@ -20,7 +22,7 @@ public class WeightItem {
     }
 
     public void setDate(long utcTime) {
-        this.date = new Date(utcTime);
+        this.date = new Date(utcTime * 1000);
     }
 
     public float getWeight() {

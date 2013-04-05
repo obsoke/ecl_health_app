@@ -8,7 +8,9 @@ import android.database.sqlite.SQLiteException;
 import cs.ecl.karpAndMamidala.tawmylf.Database.SQLiteHelper;
 import cs.ecl.karpAndMamidala.tawmylf.Models.WeightItem;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class WeightDataSource {
@@ -68,4 +70,21 @@ public class WeightDataSource {
         return weightItem;
     }
 
+    public void generateWeightData() {
+        this.open();
+        this.createWeightItem(1356998400, 200);
+        this.createWeightItem(1357257600, 215);
+        this.createWeightItem(1357689600, 205);
+        this.createWeightItem(1358035200, 199);
+        this.createWeightItem(1358467200, 198);
+        this.createWeightItem(1359504000, 190);
+        this.createWeightItem(1356998400, 160);
+        this.createWeightItem(1360627200, 140);
+        this.createWeightItem(1361232000, 120);
+        this.createWeightItem(1362009600, 80);
+        this.createWeightItem(1362268800, 60);
+        this.createWeightItem(1362873600, 40);
+        this.createWeightItem(1363305600, 20);
+        this.close();
+    }
 }
