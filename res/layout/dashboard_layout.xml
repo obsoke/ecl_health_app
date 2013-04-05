@@ -100,5 +100,25 @@
             android:layout_centerHorizontal="true"
             android:text="@string/dash_analytics" />
     </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_are"
+            android:id="@+id/tv_youAre" android:layout_gravity="center" android:textColor="#17ff3e"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Bio" android:layout_gravity="center" android:textColor="#17ff3e"
+            android:textStyle="italic"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_emerg"
+            android:id="@+id/tv_Emerg" android:layout_gravity="center" android:textColor="#ff0710"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_EmergBio" android:layout_gravity="center" android:textColor="#ff0710"
+            android:textStyle="italic" android:phoneNumber="false"/>
 
 </LinearLayout>

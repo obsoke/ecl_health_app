@@ -9,8 +9,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
+import cs.ecl.karpAndMamidala.tawmylf.Models.User;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 
 public class DashboardActivity extends Activity implements AlertDialogFragment.NoticeDialogListener {
@@ -20,6 +22,23 @@ public class DashboardActivity extends Activity implements AlertDialogFragment.N
         setContentView(R.layout.dashboard_layout);
 
         dataSource = new UserDataSource(this);
+
+        TextView bio = (TextView) findViewById(R.id.tv_Bio);
+        TextView emergBio = (TextView) findViewById(R.id.tv_EmergBio);
+        Intent i = getIntent();
+        User user = (User) i.getParcelableExtra("User");
+        if (user == null) {
+            user = dataSource.getUser();
+        }
+        String str = user.getName() + "\n";
+        str += user.getAddress() + "\n";
+        str += user.getPhone();
+        bio.setText(str);
+
+        str = user.getEmergName() + "\n";
+        str += user.getEmergAddress() + "\n";
+        str += user.getEmergPhone();
+        emergBio.setText(str);
     }
 
     @Override

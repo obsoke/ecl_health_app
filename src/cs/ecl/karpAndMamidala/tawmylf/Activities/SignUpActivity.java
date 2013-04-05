@@ -67,7 +67,7 @@ public class SignUpActivity extends Activity {
         dataSource.close();
 
         Intent i = new Intent(this, DashboardActivity.class);
-        //TODO: pass User object to DashboardActivity
+        i.putExtra("User", user);
         startActivity(i);
     }
 }

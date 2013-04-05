@@ -32,6 +32,17 @@ public class UserDataSource {
         dbHelper.close();
     }
 
+    public User getUser() {
+        this.open();
+        Cursor cursor = db.query(SQLiteHelper.TABLE_USER, columns,
+                null, null, null, null, null);
+        cursor.moveToFirst();
+        User newUser = cursorToUser(cursor);
+        cursor.close();
+        this.close();
+        return newUser;
+    }
+
     public boolean doesUserExist() {
         Cursor cursor = db.query(SQLiteHelper.TABLE_USER, columns,
                 null, null, null, null, null);

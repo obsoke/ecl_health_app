@@ -13,6 +13,10 @@ public class User implements Parcelable {
     private String emerg_address;
     private String emerg_phone;
 
+    public User() {
+        // empty ctor
+    }
+
     private User(Parcel in) {
         this.id = in.readLong();
         this.name = in.readString();
