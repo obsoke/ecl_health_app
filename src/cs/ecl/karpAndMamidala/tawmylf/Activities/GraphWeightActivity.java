@@ -98,7 +98,7 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
 
     private void generateWeightData() {
         dataSource.generateWeightData();
-        //TODO: clear out data series
+        // clear out data series
         int isr = theRenderer.getSeriesRendererCount();
         for (int i = 0; i < isr; i++) {
             theRenderer.removeSeriesRenderer(theRenderer.getSeriesRendererAt(i));

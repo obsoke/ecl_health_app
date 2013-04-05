@@ -55,6 +55,7 @@
     <string name="exercise_duration">Duration</string>
     <string name="exercise_intensity">Intensity</string>
     <string name="submit_exercise">Submit</string>
+    <string name="menu_genBP">Generate Blood Pressure data</string>
 
     <string name="data_weight">Enter your current weight</string>
     <string name="weight_info">Weight in Pounds</string>
@@ -65,6 +66,7 @@
     <string name="menu_no">No thanks.</string>
 
     <string name="menu_genWeight">Generate Weight Data</string>
+    <string name="action_genBP">Do you want to generate dummy blood pressure data?</string>
     <string name="action_genWeight">Do you want to generate dummy weight data?</string>
     <string name="action_genUser">Do you want to generate a dummy user?</string>
     <string name="action_deleteUser">Delete User</string>

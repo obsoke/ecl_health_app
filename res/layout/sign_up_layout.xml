@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/et_signup_address" android:minWidth="250dp" android:layout_gravity="center"
-            android:hint="@string/ev_signup_address" android:gravity="clip_vertical"/>
+            android:hint="@string/ev_signup_address"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

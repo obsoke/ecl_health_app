@@ -2,7 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:orientation="vertical">
+                android:layout_height="match_parent" android:orientation="vertical" android:gravity="center|top">
     <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
             android:layout_above="@+id/exercise_intensity"
             android:layout_alignLeft="@+id/exercise_intensity"
             android:ems="10"
-            android:hint="@string/exercise_duration" />
+            android:hint="@string/exercise_duration" android:numeric="integer|signed"/>
 
     <EditText
             android:id="@+id/exercise_intensity"
@@ -25,7 +25,7 @@
             android:layout_alignRight="@+id/exercise_msg"
             android:layout_centerVertical="true"
             android:ems="10"
-            android:hint="@string/exercise_intensity" />
+            android:hint="@string/exercise_intensity" android:numeric="integer|signed"/>
 
     <Button
             android:layout_width="wrap_content"

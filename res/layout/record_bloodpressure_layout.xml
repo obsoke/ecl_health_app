@@ -9,19 +9,16 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/bp_msg"
             android:layout_below="@+id/bp_msg"
-            android:layout_marginRight="26dp"
-            android:layout_marginTop="56dp"
-            android:ems="10"
-            android:hint="@string/systolic" android:inputType="numberDecimal"/>
+            android:hint="@string/systolic" android:inputType="numberDecimal" android:ems="10"
+            android:numeric="signed"/>
     <EditText
             android:id="@+id/diastolic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/systolic"
             android:layout_below="@+id/systolic"
-            android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/diastolic" android:inputType="numberDecimal">
+            android:hint="@string/diastolic" android:inputType="numberDecimal" android:numeric="signed">
     </EditText>
 
     <EditText
@@ -30,16 +27,13 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/diastolic"
             android:layout_below="@+id/diastolic"
-            android:layout_marginTop="36dp"
             android:ems="10"
-            android:hint="@string/pulse_rate" android:inputType="numberDecimal"/>
+            android:hint="@string/pulse_rate" android:inputType="numberDecimal" android:numeric="signed"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/pulse_rate"
             android:layout_below="@+id/pulse_rate"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="40dp"
             android:text="@string/submit_bp" android:onClick="onBPSubmit"/>
 </LinearLayout>
