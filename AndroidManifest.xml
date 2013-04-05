@@ -34,5 +34,6 @@
         <activity android:name=".Activities.GraphBPActivity"
                   android:label="@string/graph_bp_name"
                   android:noHistory="true"></activity>
+        <activity android:name=".Activities.AlertDialogFragment"/>
     </application>
 </manifest>

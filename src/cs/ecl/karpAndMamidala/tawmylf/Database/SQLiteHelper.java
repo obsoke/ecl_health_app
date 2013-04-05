@@ -4,6 +4,13 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * Created with IntelliJ IDEA.
+ * User: dale
+ * Date: 2013-03-31
+ * Time: 9:59 PM
+ * To change this template use File | Settings | File Templates.
+ */
 public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String COLUMN_ID = "_id";
     public static final String TABLE_USER = "users";
@@ -78,6 +85,10 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        this.wipeDB(db);
+    }
+
+    public void wipeDB(SQLiteDatabase db) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_BP);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_WEIGHT);

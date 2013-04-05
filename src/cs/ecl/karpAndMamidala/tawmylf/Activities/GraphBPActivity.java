@@ -49,7 +49,7 @@ public class GraphBPActivity extends Activity {
         else {
             theChart.repaint();
         }
-        // TODO: renderer settings
+        // TODO: renderer reset
         theRenderer.setShowCustomTextGrid(true);
     }
 

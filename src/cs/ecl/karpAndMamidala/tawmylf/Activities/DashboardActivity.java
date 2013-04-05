@@ -1,24 +1,46 @@
 package cs.ecl.karpAndMamidala.tawmylf.Activities;
 
 import android.app.Activity;
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+import cs.ecl.karpAndMamidala.tawmylf.Database.UserDataSource;
 import cs.ecl.karpAndMamidala.tawmylf.R;
 
-public class DashboardActivity extends Activity {
+public class DashboardActivity extends Activity implements AlertDialogFragment.NoticeDialogListener {
+    private UserDataSource dataSource;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_layout);
+
+        dataSource = new UserDataSource(this);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.settings, menu);
+        inflater.inflate(R.menu.reset, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_reset:
+                AlertDialogFragment frag = new AlertDialogFragment(R.string.action_deleteDialogMsg,
+                        R.string.action_deleteYes,
+                        R.string.action_deleteNo);
+                frag.show(getFragmentManager(), "AlertDialogFragment");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void onClickRecordBP(View view) {
@@ -44,5 +66,23 @@ public class DashboardActivity extends Activity {
     public void onClickRecordExercise(View view) {
         Intent i = new Intent(this, RecordExerciseActivity.class);
         startActivity(i);
+    }
+
+    private void deleteUser() {
+        dataSource.deleteUser();
+        Intent i = new Intent(this, WelcomeActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+    }
+
+    @Override
+    public void onDialogPositiveClick(DialogFragment dialog) {
+        // delete user & data
+        deleteUser();
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+        // do nothing
     }
 }

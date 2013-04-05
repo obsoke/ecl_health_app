@@ -59,6 +59,12 @@ public class UserDataSource {
         return newUser;
     }
 
+    public void deleteUser() {
+        this.open();
+        dbHelper.wipeDB(this.db);
+        this.close();
+    }
+
     private User cursorToUser(Cursor cursor) {
         User user = new User();
         user.setId(cursor.getLong(0));
