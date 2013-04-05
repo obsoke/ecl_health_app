@@ -68,6 +68,9 @@
     <string name="menu_yes">Yes please!</string>
     <string name="menu_no">No thanks.</string>
 
+    <string name="action_show30Days">Show last 30 days</string>
+    <string name="action_showAll">Show all time</string>
+
     <string name="menu_genWeight">Generate Weight Data</string>
     <string name="action_genBP">Do you want to generate dummy blood pressure data?</string>
     <string name="action_genWeight">Do you want to generate dummy weight data?</string>

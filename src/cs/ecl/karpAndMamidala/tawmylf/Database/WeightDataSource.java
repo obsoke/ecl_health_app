@@ -10,6 +10,7 @@ import cs.ecl.karpAndMamidala.tawmylf.Models.WeightItem;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -50,6 +51,27 @@ public class WeightDataSource {
         List<WeightItem> weightItemList = new ArrayList<WeightItem>();
 
         Cursor cursor = db.query(SQLiteHelper.TABLE_WEIGHT, columns, null, null, null, null, null);
+        cursor.moveToFirst();
+
+        while(!cursor.isAfterLast()) {
+            WeightItem i = cursorToWeightItem(cursor);
+            weightItemList.add(i);
+            cursor.moveToNext();
+        }
+
+        cursor.close();
+        return weightItemList;
+    }
+
+    public List<WeightItem> getLast30DaysWeightItems() {
+        List<WeightItem> weightItemList = new ArrayList<WeightItem>();
+
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.MONTH, -1);
+        Date d = cal.getTime();
+        long thirtyDaysAgo = d.getTime() / 1000;
+
+        Cursor cursor = db.query(SQLiteHelper.TABLE_WEIGHT, columns, SQLiteHelper.COLUMN_WEIGHT_DATE + " > " + thirtyDaysAgo, null, null, null, null);
         cursor.moveToFirst();
 
         while(!cursor.isAfterLast()) {

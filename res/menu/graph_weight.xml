@@ -8,6 +8,10 @@
             android:title="@string/menu_settings">
         <menu>
             <item
+                    android:id="@+id/menu_toggleData"
+                    android:title="@string/action_showAll">
+            </item>
+            <item
                     android:id="@+id/menu_genWeight"
                     android:title="@string/menu_genWeight">
             </item>

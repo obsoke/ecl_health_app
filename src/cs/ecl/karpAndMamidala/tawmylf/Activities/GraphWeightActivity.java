@@ -3,6 +3,7 @@ package cs.ecl.karpAndMamidala.tawmylf.Activities;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.DialogFragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.LinearLayout;
@@ -26,6 +27,8 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
     private WeightDataSource dataSource;
     private XYMultipleSeriesDataset theDataset = new XYMultipleSeriesDataset();
     private XYMultipleSeriesRenderer theRenderer = new XYMultipleSeriesRenderer();
+
+    private boolean showAll = false;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,19 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
                         R.string.menu_no);
                 frag.show(getFragmentManager(), "AlertDialogFragment");
                 return true;
+            case R.id.menu_toggleData:
+                if(this.showAll == true) {
+                    this.showAll = false;
+                    this.generateWeightGraph();
+                    item.setTitle(R.string.action_showAll);
+                    theRenderer.setChartTitle("Your Weight (last 30 days)");
+                }
+                else {
+                    this.showAll = true;
+                    this.generateWeightGraph();
+                    item.setTitle(R.string.action_show30Days);
+                    theRenderer.setChartTitle("Your Weight (all time)");
+                }
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -70,34 +86,18 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
         else {
             theChart.repaint();
         }
-        // TODO: renderer reset
-        theRenderer.setShowCustomTextGrid(true);
+
+        theRenderer.setPanEnabled(false, false);
+        theRenderer.setShowLegend(false);
+        theRenderer.setAxisTitleTextSize(20);
+        theRenderer.setYAxisMin(0);
+        theRenderer.setYTitle("Weight");
+        theRenderer.setXTitle("Time");
+        theRenderer.setChartTitle("Your Weight (last 30 days)");
+        theRenderer.setChartTitleTextSize(30);
     }
 
     private void generateWeightGraph() {
-        // initialize series
-        TimeSeries series = new TimeSeries("Weight");
-        theDataset.addSeries(series);
-        XYSeriesRenderer renderer = new XYSeriesRenderer();
-        theRenderer.addSeriesRenderer(renderer);
-        // TODO: renderer properties
-        renderer.setPointStyle(PointStyle.CIRCLE);
-        renderer.setFillPoints(true);
-
-        // populate list with values from DB & add to series
-        dataSource.open();
-        List<WeightItem> itemList = dataSource.getAllWeightItems();
-        for (WeightItem i: itemList) {
-            // TODO: add data to graph
-            series.add(i.getDate(), i.getWeight());
-        }
-        dataSource.close();
-        // re-draw graph
-        theChart.repaint();
-    }
-
-    private void generateWeightData() {
-        dataSource.generateWeightData();
         // clear out data series
         int isr = theRenderer.getSeriesRendererCount();
         for (int i = 0; i < isr; i++) {
@@ -107,6 +107,39 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
         for (int i = 0; i < isd; i++) {
             theDataset.removeSeries(i);
         }
+
+        // initialize series
+        TimeSeries series = new TimeSeries("Weight");
+        theDataset.addSeries(series);
+        XYSeriesRenderer renderer = new XYSeriesRenderer();
+        theRenderer.addSeriesRenderer(renderer);
+        // TODO: renderer properties
+        renderer.setPointStyle(PointStyle.CIRCLE);
+        renderer.setFillPoints(true);
+        renderer.setFillBelowLine(true);
+        renderer.setFillBelowLineColor(Color.BLUE);
+
+        // populate list with values from DB & add to series
+        dataSource.open();
+        List<WeightItem> itemList;
+        if(this.showAll == true) {
+            itemList = dataSource.getAllWeightItems();
+        }
+        else {
+            itemList = dataSource.getLast30DaysWeightItems();
+        }
+
+        for (WeightItem i: itemList) {
+            series.add(i.getDate(), i.getWeight());
+        }
+
+        dataSource.close();
+        // re-draw graph
+        theChart.repaint();
+    }
+
+    private void generateWeightData() {
+        dataSource.generateWeightData();
         this.generateWeightGraph();
     }
 

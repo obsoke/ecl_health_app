@@ -74,7 +74,8 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
             theChart.repaint();
         }
         // TODO: renderer reset
-        theRenderer.setShowCustomTextGrid(true);
+        theRenderer.setAxisTitleTextSize(30);
+        theRenderer.setYAxisMin(0);
     }
 
     private void generateBPGraph() {
