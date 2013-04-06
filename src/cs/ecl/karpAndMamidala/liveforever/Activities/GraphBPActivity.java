@@ -84,14 +84,14 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
         theRenderer = new XYMultipleSeriesRenderer();
         LinearLayout layout = (LinearLayout) findViewById(R.id.chart);
         layout.removeAllViews();
-        theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd @ hh:mm");
+        theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd");
         // TODO: set up theRenderer
         layout.addView(theChart, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
 
         theRenderer.setPanEnabled(false, false);
-        theRenderer.setShowLegend(false);
         theRenderer.setAxisTitleTextSize(20);
+        theRenderer.setFitLegend(true);
         theRenderer.setYAxisMin(0);
         theRenderer.setYTitle("Units");
         theRenderer.setXTitle("Time");
@@ -103,9 +103,9 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
         // clear out data series
         // doing this the lazy way and i get errors otherwise
         // initialize series
-        TimeSeries sysSeries = new TimeSeries("Systolic Pressure");
-        TimeSeries diaSeries = new TimeSeries("Diastolic Pressure");
-        TimeSeries hrSeries = new TimeSeries("Heart Rate");
+        TimeSeries sysSeries = new TimeSeries("Systolic (mmHg)");
+        TimeSeries diaSeries = new TimeSeries("Diastolic (mmHg)");
+        TimeSeries hrSeries = new TimeSeries("Pulse (bpm)");
         theDataset.addSeries(sysSeries);
         theDataset.addSeries(diaSeries);
         theDataset.addSeries(hrSeries);

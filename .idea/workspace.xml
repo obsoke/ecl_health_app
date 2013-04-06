@@ -28,11 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/BloodPressureDataSource.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/BloodPressureDataSource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphBPActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphBPActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ecl_health_app.eml" afterPath="$PROJECT_DIR$/ecl_health_app.eml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ecl_health_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +61,8 @@
     <file path="/graph_exercise_layout.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365006908412" ignored="false" />
     <file path="/main.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365005063452" ignored="false" />
     <file path="/settings.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365120349277" ignored="false" />
-    <file path="/GraphWeightActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365209220123" ignored="false" />
-    <file path="/GraphBPActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365211586732" ignored="false" />
+    <file path="/GraphWeightActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365212250157" ignored="false" />
+    <file path="/GraphBPActivity.java" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365211986680" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365044661547" ignored="false" />
     <file path="/record_bloodpressure_layout.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365044749197" ignored="false" />
     <file path="/record_exercise_layout.xml" changelist="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" time="1365083270550" ignored="false" />
@@ -160,7 +157,28 @@
     <favorites_list name="ecl_health_app" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="GraphBPActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphBPActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="91" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphWeightActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="0" selection-start="4161" selection-end="4161" vertical-scroll-proportion="0.4856115">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -192,8 +210,8 @@
         <option value="$PROJECT_DIR$/res/menu/graph_bp.xml" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/tawmylf/Activities/GraphBPActivity.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/BloodPressureDataSource.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphBPActivity.java" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java" />
       </list>
     </option>
   </component>
@@ -534,7 +552,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="25" width="1920" height="973" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -553,7 +571,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18036287" sideWeight="0.68464243" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18036287" sideWeight="0.68464243" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32121924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31750268" sideWeight="0.6896942" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -741,19 +759,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="15" selection-start="4032" selection-end="4032" vertical-scroll-proportion="0.7571942">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphBPActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="29" selection-start="4814" selection-end="4814" vertical-scroll-proportion="0.53956836">
+        <state line="86" column="91" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="0" selection-start="4161" selection-end="4161" vertical-scroll-proportion="0.4856115">
+          <folding />
         </state>
       </provider>
     </entry>

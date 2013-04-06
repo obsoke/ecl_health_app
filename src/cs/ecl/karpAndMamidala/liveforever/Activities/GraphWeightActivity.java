@@ -75,7 +75,7 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
         // initialize chart
         if(theChart == null) {
             LinearLayout layout = (LinearLayout) findViewById(R.id.chart);
-            theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd @ hh:mm");
+            theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd");
             // TODO: set up theRenderer
             layout.addView(theChart, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT));
