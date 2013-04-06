@@ -95,22 +95,16 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
     }
 
     private void generateWeightGraph() {
-        // clear out data series
-        int isr = theRenderer.getSeriesRendererCount();
-        for (int i = 0; i < isr; i++) {
-            theRenderer.removeSeriesRenderer(theRenderer.getSeriesRendererAt(i));
-        }
-        int isd = theDataset.getSeriesCount();
-        for (int i = 0; i < isd; i++) {
+        for (int i = 0; i < theDataset.getSeriesCount(); ++i) {
             theDataset.removeSeries(i);
         }
-
         // initialize series
         TimeSeries series = new TimeSeries("Weight");
         theDataset.addSeries(series);
         XYSeriesRenderer renderer = new XYSeriesRenderer();
-        theRenderer.addSeriesRenderer(renderer);
-        // TODO: renderer properties
+        if(theRenderer.getSeriesRendererCount() == 0) {
+            theRenderer.addSeriesRenderer(renderer);
+        }
         renderer.setPointStyle(PointStyle.CIRCLE);
         renderer.setFillPoints(true);
         renderer.setFillBelowLine(true);

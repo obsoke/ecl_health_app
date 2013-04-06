@@ -3,7 +3,7 @@
 	<output-test url="file://$MODULE_DIR$/out/test/ecl_health_app"/>
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
-	<lib name="achartengine-1.0.0.jar" scope="COMPILE">
+	<lib name="$MODULE_DIR$/lib/achartengine-1.0.0.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/achartengine-1.0.0.jar!/"/>
 	</lib>
 </component>

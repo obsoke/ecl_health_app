@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import cs.ecl.karpAndMamidala.liveforever.Database.BloodPressureDataSource;
 import cs.ecl.karpAndMamidala.liveforever.Models.BloodPressureItem;
+import cs.ecl.karpAndMamidala.liveforever.Models.WeightItem;
 import cs.ecl.karpAndMamidala.liveforever.R;
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
@@ -26,8 +27,10 @@ import java.util.List;
 public class GraphBPActivity extends Activity implements AlertDialogFragment.NoticeDialogListener{
     private GraphicalView theChart;
     private BloodPressureDataSource dataSource;
-    private XYMultipleSeriesDataset theDataset = new XYMultipleSeriesDataset();
-    private XYMultipleSeriesRenderer theRenderer = new XYMultipleSeriesRenderer();
+    private XYMultipleSeriesDataset theDataset;
+    private XYMultipleSeriesRenderer theRenderer;
+
+    private boolean showAll = false;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
         initChart();
         generateBPGraph();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -54,6 +58,21 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
                         R.string.menu_no);
                 frag.show(getFragmentManager(), "AlertDialogFragment");
                 return true;
+            case R.id.menu_toggleData:
+                if(this.showAll == true) {
+                    this.showAll = false;
+                    this.initChart();
+                    this.generateBPGraph();
+                    item.setTitle(R.string.action_showAll);
+                    theRenderer.setChartTitle("Your Blood Pressure (last 30 days)");
+                }
+                else {
+                    this.showAll = true;
+                    this.initChart();
+                    this.generateBPGraph();
+                    item.setTitle(R.string.action_show30Days);
+                    theRenderer.setChartTitle("Your Blood Pressure (all time)");
+                }
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -61,22 +80,28 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
 
     private void initChart() {
         // initialize chart
-        if(theChart == null) {
-            LinearLayout layout = (LinearLayout) findViewById(R.id.chart);
-            theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd @ hh:mm");
-            // TODO: set up theRenderer
-            layout.addView(theChart, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.MATCH_PARENT));
-        }
-        else {
-            theChart.repaint();
-        }
-        // TODO: renderer reset
-        theRenderer.setAxisTitleTextSize(30);
+        theDataset = new XYMultipleSeriesDataset();
+        theRenderer = new XYMultipleSeriesRenderer();
+        LinearLayout layout = (LinearLayout) findViewById(R.id.chart);
+        layout.removeAllViews();
+        theChart = ChartFactory.getTimeChartView(this, theDataset, theRenderer, "yyyy-MM-dd @ hh:mm");
+        // TODO: set up theRenderer
+        layout.addView(theChart, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+
+        theRenderer.setPanEnabled(false, false);
+        theRenderer.setShowLegend(false);
+        theRenderer.setAxisTitleTextSize(20);
         theRenderer.setYAxisMin(0);
+        theRenderer.setYTitle("Units");
+        theRenderer.setXTitle("Time");
+        theRenderer.setChartTitle("Your Blood Pressure (last 30 days)");
+        theRenderer.setChartTitleTextSize(30);
     }
 
     private void generateBPGraph() {
+        // clear out data series
+        // doing this the lazy way and i get errors otherwise
         // initialize series
         TimeSeries sysSeries = new TimeSeries("Systolic Pressure");
         TimeSeries diaSeries = new TimeSeries("Diastolic Pressure");
@@ -90,19 +115,27 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
         theRenderer.addSeriesRenderer(sysRend);
         theRenderer.addSeriesRenderer(diaRend);
         theRenderer.addSeriesRenderer(hrRend);
-        // TODO: renderer properties
         sysRend.setPointStyle(PointStyle.CIRCLE);
         sysRend.setFillPoints(true);
         sysRend.setColor(Color.RED);
+        sysRend.setLineWidth(3);
         diaRend.setPointStyle(PointStyle.SQUARE);
         diaRend.setFillPoints(true);
         hrRend.setPointStyle(PointStyle.TRIANGLE);
         hrRend.setFillPoints(true);
         hrRend.setColor(Color.GREEN);
+        hrRend.setLineWidth(5);
         // populate list with values from DB & add to series
         dataSource.open();
-        List<BloodPressureItem> itemList = dataSource.getAllBloodPressureItems();
+        List<BloodPressureItem> itemList;
+        if(this.showAll == true) {
+            itemList = dataSource.getAllBloodPressureItems();
+        }
+        else {
+            itemList = dataSource.getLast30DaysBloodPressureItems();
+        }
         dataSource.close();
+
 
         for (BloodPressureItem i: itemList) {
             Date d = i.getDate();
@@ -115,18 +148,6 @@ public class GraphBPActivity extends Activity implements AlertDialogFragment.Not
     }
     private void generateBPData() {
         dataSource.generateBPData();
-        // clear out data series
-        int isr = theRenderer.getSeriesRendererCount();
-
-        // WARNING: may cause random crash
-        // possible bug with achartengine
-        for (int i = 0; i < isr; i++) {
-            theRenderer.removeSeriesRenderer(theRenderer.getSeriesRendererAt(i));
-        }
-        int isd = theDataset.getSeriesCount();
-        for (int i = 0; i < isd; i++) {
-            theDataset.removeSeries(i);
-        }
         this.generateBPGraph();
     }
 

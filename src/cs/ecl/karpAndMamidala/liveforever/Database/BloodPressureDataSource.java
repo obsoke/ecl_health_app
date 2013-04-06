@@ -6,8 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import cs.ecl.karpAndMamidala.liveforever.Models.BloodPressureItem;
+import cs.ecl.karpAndMamidala.liveforever.Models.WeightItem;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class BloodPressureDataSource {
@@ -89,5 +92,26 @@ public class BloodPressureDataSource {
         this.createBloodPressureItem(1362873600, 231, 113, 123);
         this.createBloodPressureItem(1363305600, 138, 223, 170);
         this.close();
+    }
+
+    public List<BloodPressureItem> getLast30DaysBloodPressureItems() {
+        List<BloodPressureItem> bloodPressureItemList = new ArrayList<BloodPressureItem>();
+
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.MONTH, -1);
+        Date d = cal.getTime();
+        long thirtyDaysAgo = d.getTime() / 1000;
+
+        Cursor cursor = db.query(SQLiteHelper.TABLE_BP, columns, SQLiteHelper.COLUMN_BP_DATE + " > " + thirtyDaysAgo, null, null, null, null);
+        cursor.moveToFirst();
+
+        while(!cursor.isAfterLast()) {
+            BloodPressureItem i = cursorToBPItem(cursor);
+            bloodPressureItemList.add(i);
+            cursor.moveToNext();
+        }
+
+        cursor.close();
+        return bloodPressureItemList;
     }
 }
