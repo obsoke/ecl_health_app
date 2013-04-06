@@ -28,17 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a275d02-3975-4cb1-b9cd-ae6e71d6fc99" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeExerciseActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/analytics_exer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeBPActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeBPActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/DashboardActivity.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/DashboardActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/ExerciseDataSource.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/ExerciseDataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Utilities/MathHelper.java" afterPath="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Utilities/MathHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dashboard_layout.xml" afterPath="$PROJECT_DIR$/res/layout/dashboard_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/welcome_layout.xml" afterPath="$PROJECT_DIR$/res/layout/welcome_layout.xml" />
     </list>
     <ignored path="ecl_health_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,7 +164,47 @@
     <favorites_list name="ecl_health_app" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="AnalyzeBPActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeBPActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="9" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10529#10536#0" expanded="true" />
+                <element signature="e#10802#10809#0" expanded="true" />
+                <element signature="e#11072#11079#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalyzeExerciseActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeExerciseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="366" column="32" selection-start="14788" selection-end="14788" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#15361#15370#0" expanded="true" />
+                <element signature="e#15634#15643#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalyzeWeightActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="48" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.32374102">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6279#6286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -191,7 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/WeightDataSource.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/RecordWeightActivity.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/GraphWeightActivity.java" />
         <option value="$PROJECT_DIR$/res/menu/analytics.xml" />
@@ -199,14 +229,15 @@
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/BloodPressureDataSource.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Utilities/MathHelper.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/DashboardActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/dashboard_layout.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeBPActivity.java" />
-        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java" />
         <option value="$PROJECT_DIR$/res/menu/analytics_exer.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Database/ExerciseDataSource.java" />
         <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeExerciseActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/dashboard_layout.xml" />
+        <option value="$PROJECT_DIR$/res/layout/welcome_layout.xml" />
+        <option value="$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java" />
       </list>
     </option>
   </component>
@@ -295,50 +326,6 @@
               <option name="myItemId" value="liveforever" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liveforever" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="liveforever" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -359,74 +346,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ecl_health_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,10 +568,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="25" width="1920" height="973" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31590182" sideWeight="0.6787808" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31590182" sideWeight="0.6787808" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31590182" sideWeight="0.68464243" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31590182" sideWeight="0.68464243" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -667,7 +586,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31535757" sideWeight="0.6696905" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31535757" sideWeight="0.6696905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -746,37 +665,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/dashboard_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="103" column="15" selection-start="5054" selection-end="5054" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ant.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="54" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.7553957">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/DashboardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="24" selection-start="3182" selection-end="3182" vertical-scroll-proportion="0.6205036">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Utilities/MathHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="15" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
@@ -786,28 +674,6 @@
             <element signature="e#3223#3230#0" expanded="true" />
             <element signature="e#3618#3625#0" expanded="true" />
             <element signature="e#3745#3752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeBPActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="9" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.6642468">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10529#10536#0" expanded="true" />
-            <element signature="e#10802#10809#0" expanded="true" />
-            <element signature="e#11072#11079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="27" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.5716878">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6279#6286#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,20 +737,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/dashboard_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/analytics_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/graph_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/welcome_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="31" selection-start="3945" selection-end="3945" vertical-scroll-proportion="0.6744604">
+        <state line="66" column="15" selection-start="2978" selection-end="2978" vertical-scroll-proportion="0.2967626">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeBPActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="9" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10529#10536#0" expanded="true" />
+            <element signature="e#10802#10809#0" expanded="true" />
+            <element signature="e#11072#11079#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeExerciseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="366" column="32" selection-start="14788" selection-end="14788" vertical-scroll-proportion="0.23021583">
+        <state line="366" column="32" selection-start="14788" selection-end="14788" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#15361#15370#0" expanded="true" />
             <element signature="e#15634#15643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs/ecl/karpAndMamidala/liveforever/Activities/AnalyzeWeightActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="48" selection-start="3374" selection-end="3374" vertical-scroll-proportion="0.32374102">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6279#6286#0" expanded="true" />
           </folding>
         </state>
       </provider>
