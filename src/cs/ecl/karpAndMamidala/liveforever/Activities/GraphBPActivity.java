@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import cs.ecl.karpAndMamidala.liveforever.Database.BloodPressureDataSource;
 import cs.ecl.karpAndMamidala.liveforever.Models.BloodPressureItem;
-import cs.ecl.karpAndMamidala.liveforever.Models.WeightItem;
 import cs.ecl.karpAndMamidala.liveforever.R;
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
@@ -24,7 +23,7 @@ import org.achartengine.renderer.XYSeriesRenderer;
 import java.util.Date;
 import java.util.List;
 
-public class GraphBPActivity extends Activity implements AlertDialogFragment.NoticeDialogListener{
+public class GraphBPActivity extends Activity implements AlertDialogFragment.AlertDialogNotifier {
     private GraphicalView theChart;
     private BloodPressureDataSource dataSource;
     private XYMultipleSeriesDataset theDataset;

@@ -12,7 +12,7 @@ import cs.ecl.karpAndMamidala.liveforever.R;
 import cs.ecl.karpAndMamidala.liveforever.Models.User;
 import cs.ecl.karpAndMamidala.liveforever.Database.UserDataSource;
 
-public class WelcomeActivity extends Activity implements AlertDialogFragment.NoticeDialogListener{
+public class WelcomeActivity extends Activity implements AlertDialogFragment.AlertDialogNotifier {
     private UserDataSource dataSource;
 
     @Override

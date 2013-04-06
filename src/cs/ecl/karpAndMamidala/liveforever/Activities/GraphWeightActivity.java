@@ -19,7 +19,7 @@ import org.achartengine.renderer.XYSeriesRenderer;
 
 import java.util.List;
 
-public class GraphWeightActivity extends Activity implements AlertDialogFragment.NoticeDialogListener{
+public class GraphWeightActivity extends Activity implements AlertDialogFragment.AlertDialogNotifier {
     private GraphicalView theChart;
     private WeightDataSource dataSource;
     private XYMultipleSeriesDataset theDataset = new XYMultipleSeriesDataset();

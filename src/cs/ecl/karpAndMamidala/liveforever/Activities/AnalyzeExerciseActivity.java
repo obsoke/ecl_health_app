@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AnalyzeExerciseActivity extends Activity implements AlertDialogFragment.NoticeDialogListener {
+public class AnalyzeExerciseActivity extends Activity implements AlertDialogFragment.AlertDialogNotifier {
     private ExerciseDataSource dataSource;
     private boolean showAll = false;
 

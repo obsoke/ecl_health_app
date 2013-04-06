@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import cs.ecl.karpAndMamidala.liveforever.Database.BloodPressureDataSource;
-import cs.ecl.karpAndMamidala.liveforever.Database.WeightDataSource;
 import cs.ecl.karpAndMamidala.liveforever.Models.BloodPressureItem;
-import cs.ecl.karpAndMamidala.liveforever.Models.WeightItem;
 import cs.ecl.karpAndMamidala.liveforever.R;
 import cs.ecl.karpAndMamidala.liveforever.Utilities.MathHelper;
 

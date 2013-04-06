@@ -13,7 +13,7 @@ import cs.ecl.karpAndMamidala.liveforever.Database.UserDataSource;
 import cs.ecl.karpAndMamidala.liveforever.Models.User;
 import cs.ecl.karpAndMamidala.liveforever.R;
 
-public class DashboardActivity extends Activity implements AlertDialogFragment.NoticeDialogListener {
+public class DashboardActivity extends Activity implements AlertDialogFragment.AlertDialogNotifier {
     private UserDataSource dataSource;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
