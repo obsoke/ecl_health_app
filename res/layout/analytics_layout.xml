@@ -7,6 +7,8 @@
 
     <TableLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" android:layout_gravity="center" android:id="@+id/analyticsTable">
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/analyticsTable">
     </TableLayout>
 </LinearLayout>

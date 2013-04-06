@@ -53,6 +53,7 @@ public class BloodPressureDataSource {
     public List<BloodPressureItem> getAllBloodPressureItems() {
         List<BloodPressureItem> bpItemList = new ArrayList<BloodPressureItem>();
 
+        this.open();
         Cursor cursor = db.query(SQLiteHelper.TABLE_BP, columns, null, null, null, null, null);
         cursor.moveToFirst();
 
@@ -62,6 +63,7 @@ public class BloodPressureDataSource {
             cursor.moveToNext();
         }
 
+        this.close();
         cursor.close();
         return bpItemList;
     }
@@ -102,6 +104,7 @@ public class BloodPressureDataSource {
         Date d = cal.getTime();
         long thirtyDaysAgo = d.getTime() / 1000;
 
+        this.open();
         Cursor cursor = db.query(SQLiteHelper.TABLE_BP, columns, SQLiteHelper.COLUMN_BP_DATE + " > " + thirtyDaysAgo, null, null, null, null);
         cursor.moveToFirst();
 
@@ -111,6 +114,7 @@ public class BloodPressureDataSource {
             cursor.moveToNext();
         }
 
+        this.close();
         cursor.close();
         return bloodPressureItemList;
     }

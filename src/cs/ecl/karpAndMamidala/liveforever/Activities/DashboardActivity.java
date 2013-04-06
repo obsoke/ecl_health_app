@@ -70,6 +70,11 @@ public class DashboardActivity extends Activity implements AlertDialogFragment.N
         startActivity(i);
     }
 
+    public void onClickAnalyzeBP(View view) {
+        Intent i = new Intent(this, AnalyzeBPActivity.class);
+        startActivity(i);
+    }
+
     public void onClickRecordWeight(View view) {
         Intent i = new Intent(this, RecordWeightActivity.class);
         startActivity(i);
