@@ -98,7 +98,7 @@
             android:layout_alignRight="@+id/btn_stats_weight"
             android:layout_below="@+id/btn_stats_weight"
             android:layout_centerHorizontal="true"
-            android:text="@string/dash_analytics" />
+            android:text="@string/dash_analytics" android:onClick="onClickAnalyzeExercise"/>
     </LinearLayout>
     <TextView
             android:layout_width="wrap_content"

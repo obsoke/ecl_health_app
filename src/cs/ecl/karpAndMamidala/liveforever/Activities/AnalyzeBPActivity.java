@@ -67,7 +67,14 @@ public class AnalyzeBPActivity extends Activity {
         else {
             itemList = dataSource.getLast30DaysBloodPressureItems();
         }
-
+        if(itemList.size() == 0) {
+            TableLayout tableView = (TableLayout) findViewById(R.id.analyticsTable);
+            tableView.removeAllViews();
+            TextView error = new TextView(this);
+            error.setText("No data");
+            tableView.addView(error);
+            return;
+        }
         // get needed data
         List<Float> sysList = this.getSystolic(itemList);
         List<Float> diaList = this.getDiastolic(itemList);

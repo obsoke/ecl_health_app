@@ -37,5 +37,6 @@
         <activity android:name=".Activities.AlertDialogFragment"/>
         <activity android:name=".Activities.AnalyzeWeightActivity"/>
         <activity android:name=".Activities.AnalyzeBPActivity"/>
+        <activity android:name=".Activities.AnalyzeExerciseActivity"/>
     </application>
 </manifest>

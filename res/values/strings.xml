@@ -79,6 +79,9 @@
     <string name="action_deleteDialogMsg">Are you sure you want to delete the user? All data will be deleted.</string>
     <string name="action_deleteYes">Delete me!</string>
     <string name="action_deleteNo">Nevermind.</string>
+    <string name="menu_genExer">Generate Exercise Data</string>
+    <string name="action_genExer">Do you want to generate dummy exercise data?</string>
+
 
     <string-array name="record_bp_spinner">
         <item>Cardio</item>

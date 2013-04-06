@@ -95,6 +95,12 @@ public class DashboardActivity extends Activity implements AlertDialogFragment.N
         startActivity(i);
     }
 
+    public void onClickAnalyzeExercise(View view) {
+        Intent i = new Intent(this, AnalyzeExerciseActivity.class);
+        startActivity(i);
+    }
+
+
     private void deleteUser() {
         dataSource.deleteUser();
         Intent i = new Intent(this, WelcomeActivity.class);
