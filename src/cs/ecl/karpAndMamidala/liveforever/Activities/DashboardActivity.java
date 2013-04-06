@@ -80,6 +80,11 @@ public class DashboardActivity extends Activity implements AlertDialogFragment.N
         startActivity(i);
     }
 
+    public void onClickAnalyzeWeight(View view) {
+        Intent i = new Intent(this, AnalyzeWeightActivity.class);
+        startActivity(i);
+    }
+
     public void onClickRecordExercise(View view) {
         Intent i = new Intent(this, RecordExerciseActivity.class);
         startActivity(i);

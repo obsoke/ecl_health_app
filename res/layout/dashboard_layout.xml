@@ -66,7 +66,7 @@
                 android:layout_alignRight="@+id/btn_record_weight"
                 android:layout_below="@+id/btn_stats_bp"
                 android:layout_centerHorizontal="true"
-                android:text="@string/dash_analytics" />
+                android:text="@string/dash_analytics" android:onClick="onClickAnalyzeWeight"/>
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

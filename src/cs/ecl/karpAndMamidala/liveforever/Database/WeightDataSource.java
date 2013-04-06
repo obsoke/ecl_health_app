@@ -36,11 +36,13 @@ public class WeightDataSource {
         values.put(SQLiteHelper.COLUMN_WEIGHT_DATE, date);
         values.put(SQLiteHelper.COLUMN_WEIGHT_WEIGHT, weight);
 
+        this.open();
         long insertId = db.insert(SQLiteHelper.TABLE_WEIGHT, null, values);
         Cursor cursor = db.query(SQLiteHelper.TABLE_WEIGHT, columns,
                 SQLiteHelper.COLUMN_ID + " = " + insertId, null, null, null, null);
         cursor.moveToFirst();
         WeightItem newWeightItem = cursorToWeightItem(cursor);
+        this.close();
         cursor.close();
         return newWeightItem;
     }
@@ -48,6 +50,7 @@ public class WeightDataSource {
     public List<WeightItem> getAllWeightItems() {
         List<WeightItem> weightItemList = new ArrayList<WeightItem>();
 
+        this.open();
         Cursor cursor = db.query(SQLiteHelper.TABLE_WEIGHT, columns, null, null, null, null, null);
         cursor.moveToFirst();
 
@@ -57,6 +60,7 @@ public class WeightDataSource {
             cursor.moveToNext();
         }
 
+        this.close();
         cursor.close();
         return weightItemList;
     }
@@ -69,6 +73,7 @@ public class WeightDataSource {
         Date d = cal.getTime();
         long thirtyDaysAgo = d.getTime() / 1000;
 
+        this.open();
         Cursor cursor = db.query(SQLiteHelper.TABLE_WEIGHT, columns, SQLiteHelper.COLUMN_WEIGHT_DATE + " > " + thirtyDaysAgo, null, null, null, null);
         cursor.moveToFirst();
 
@@ -78,6 +83,7 @@ public class WeightDataSource {
             cursor.moveToNext();
         }
 
+        this.close();
         cursor.close();
         return weightItemList;
     }

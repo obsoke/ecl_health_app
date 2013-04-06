@@ -32,11 +32,8 @@ public class RecordWeightActivity extends Activity {
         }
         float weight = Float.parseFloat(weightStr);
 
-        dataSource.open();
-        //TODO: create new entry
         Date d = new Date();
         dataSource.createWeightItem(d.getTime(), weight);
-        dataSource.close();
 
         // show success toast
         Toast.makeText(getBaseContext(), R.string.weight_success, Toast.LENGTH_SHORT).show();

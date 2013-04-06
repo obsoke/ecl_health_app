@@ -111,7 +111,6 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
         renderer.setFillBelowLineColor(Color.BLUE);
 
         // populate list with values from DB & add to series
-        dataSource.open();
         List<WeightItem> itemList;
         if(this.showAll == true) {
             itemList = dataSource.getAllWeightItems();
@@ -124,7 +123,6 @@ public class GraphWeightActivity extends Activity implements AlertDialogFragment
             series.add(i.getDate(), i.getWeight());
         }
 
-        dataSource.close();
         // re-draw graph
         theChart.repaint();
     }
