@@ -76,7 +76,6 @@ public class MathHelper {
             squared.add(i * i);
         }
 
-
         float addedSquares = 0;
         for(float i: squared) {
             addedSquares += i;
